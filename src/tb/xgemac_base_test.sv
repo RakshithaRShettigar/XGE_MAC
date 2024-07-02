@@ -1,3 +1,6 @@
+`ifndef XGEMAC_BASE_TEST_INCLUDED_
+`define XGEMAC_BASE_TEST_INCLUDED_
+
 class xgemac_base_test extends uvm_test;
   
   xgemac_env xgemac_env_h;
@@ -25,3 +28,4 @@ class xgemac_base_test extends uvm_test;
   endtask
   
 endclass
+`endif
