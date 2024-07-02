@@ -1,3 +1,6 @@
+`ifndef XGEMAC_NORMAL_TEST_INCLUDED_
+`define XGEMAC_NORMAL_TEST_INCLUDED_
+
 class xgemac_normal_test extends xgemac_base_test;
   xgemac_vseq_normal vseq_normal_h; 
   `uvm_component_utils(xgemac_normal_test)
@@ -29,3 +32,5 @@ class xgemac_normal_test extends xgemac_base_test;
     phase.drop_objection(this);
   endtask
 endclass
+
+`endif
