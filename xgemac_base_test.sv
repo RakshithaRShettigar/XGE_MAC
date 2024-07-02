@@ -1,6 +1,6 @@
 class xgemac_base_test extends uvm_test;
   
-  xgemac_env env_h;
+  xgemac_env xgemac_env_h;
  
   `uvm_component_utils(xgemac_base_test)
   
@@ -10,7 +10,7 @@ class xgemac_base_test extends uvm_test;
   
   function void build_phase(uvm_phase phase);
     super.build_phase(phase); 
-    env_h = xgemac_env::type_id::create("env_h", this);
+    xgemac_env_h = xgemac_env::type_id::create("xgemac_env_h", this);
   endfunction
  
   task run_phase(uvm_phase phase);
