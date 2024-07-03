@@ -12,7 +12,7 @@ class xgemac_normal_vseq extends uvm_sequence;
   reset_seqr reset_seqr_h;
 
   in_seq in_seq_h;
-  wish_seq  wiash_seq_h;
+  wish_seq  wish_seq_h;
   reset_seq  reset_seq_h;
   
  function xgemac_normal_vseq::new(string name = "xgemac_normal_vseq");
