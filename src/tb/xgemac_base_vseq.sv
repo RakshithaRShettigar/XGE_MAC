@@ -32,10 +32,16 @@ class xgemac_base_vseq extends uvm_sequence;
   //-------------------------------------------------------
   // Externally defined Tasks and Functions
   //-------------------------------------------------------
-  extern function new(string name = "apb_virtual_base_seq");
+  extern function new(string name = "xgemac_base_vseq");
   extern task body();
 endclass : xgemac_base_vseq
-    
+
+//--------------------------------------------------------------------------------------------
+// Construct: new
+//
+// Parameters:
+//  name - xgemac_base_vseq
+//--------------------------------------------------------------------------------------------
 function xgemac_base_vseq::new(string name = "xgemac_base_vseq");
   super.new(name);
 endfunction : new
@@ -45,7 +51,7 @@ endfunction : new
 // Used to create the wish seqr to master seqr
 //
 // Parameters:
-//  name - apb_virtual_base_seq
+//  name - xgemac_base_vseq
 //--------------------------------------------------------------------------------------------
 task xgemac_base_vseq::body();
   super.body();
