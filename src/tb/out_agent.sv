@@ -8,7 +8,7 @@ class out_agent extends uvm_agent;
   //factory registration
   `uvm_component_utils(out_agent)
 
-  \\Declaring the handles
+  //Declaring the handles
   out_monitor out_mon_h;
 
   extern function new(string name = "out_agent", uvm_component parent);
