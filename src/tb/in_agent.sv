@@ -1,8 +1,9 @@
 class in_agent extends uvm_agent;
+  
 //factory registration
   `uvm_component_utils(in_agent)
 
-
+//Declaring the handles
   in_drv in_drv_h;
   in_mon in_mon_h;
   in_seqr in_seqr_h;
