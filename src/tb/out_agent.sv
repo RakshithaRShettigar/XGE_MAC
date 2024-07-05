@@ -16,7 +16,7 @@ class out_agent extends uvm_agent;
 endclass
 
 //class constructor
-function out_agent::new(string name = "out_agent", uvm_component parent);
+    function out_agent::new(string name = "out_agent", uvm_component parent = null);
   super.new(name, parent);
 endfunction : new
 
