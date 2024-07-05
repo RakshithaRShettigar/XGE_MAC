@@ -2,7 +2,6 @@
 `define IN_AGENT_INCLUDED_
 //--------------------------------------------------------------------------------------------
 // Class: in_agent
-// This class holds the data items required to drive the stimulus to dut
 //--------------------------------------------------------------------------------------------
 
 class in_agent extends uvm_agent;
