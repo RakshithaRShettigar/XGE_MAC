@@ -1,20 +1,26 @@
 `ifndef XGEMAC_ENVIRONMENT_INCLUDED_
 `define XGEMAC_ENVIRONMENT_INCLUDED_
-
+//--------------------------------------------------------------------------------------------
+// Class: xgemac_env
+// In this class we build and connect the components
+//--------------------------------------------------------------------------------------------
 class xgemac_env extends uvm_env;
+  //factory registration
  `uvm_component_utils(xgemac_env)
 
+ //class constructor
+ function new(string name = "xgemac_env", uvm_component parent);
+    super.new(name, parent);
+  endfunction
+ 
+ //Declaring the handles
   in_agent in_agent_h;
   out_agent out_agent_h;
   wishbone_agent wishbone_agent_h;
   reset_agent reset_agent_h;
   xgemac_scoreboard xgemac_scoreboard_h;
- 
 
- function new(string name = "xgemac_env", uvm_component parent);
-    super.new(name, parent);
-  endfunction
-
+ //Build phase
   virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
     in_agent_h = in_agent::type_id::create("in_agent_h", this);
@@ -25,6 +31,7 @@ class xgemac_env extends uvm_env;
     set_config_int("out_agent_h", "is_active", UVM_PASSIVE);
   endfunction
 
+ //Connect phase
   virtual function void connect_phase(uvm_phase phase);
    super.connect_phase(phase);
    in_agent_h.in_mon_h.in_port.connect(xgemac_scoreboard_h.in_active);
