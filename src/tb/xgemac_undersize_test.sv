@@ -14,24 +14,24 @@ class xgemac_undersize_test extends xgemac_base_test;
   endclass
 
   //class constructor
-  function new(string name = "xgemac_undersize_test", uvm_component parent = null);
+  function xgemac_undersize_test :: new(string name = "xgemac_undersize_test", uvm_component parent = null);
     super.new(name, parent);
   endfunction
 
   //Build phase
-  function void build_phase(uvm_phase phase);
+  function void xgemac_undersize_test :: build_phase(uvm_phase phase);
     super.build_phase(phase);
   endfunction
     
   //Run phase
-  task run_phase(uvm_phase phase);
+  task xgemac_undersize_test :: run_phase(uvm_phase phase);
     super.run_phase(phase);
-    
     phase.raise_objection(this);
-
+    
+    //creating virtual sequence
     vseq_undersize_h = xgemac_vseq_undersize::type_id::create("vseq_undersize_h");
     `uvm_info(get_type_name(), $sformatf("Inside xgemac_undersize_test"), UVM_NONE);
-
+    
     // Assign sequencer handle from hierarchy to sequencer handle in virtual sequence
     vseq_undersize_h.in_seqr_h = xgemac_env_h.in_agent_h.in_seqr_h;
     vseq_undersize_h.wish_seqr_h = xgemac_env_h.wishbone_agent_h.wish_seqr_h;
