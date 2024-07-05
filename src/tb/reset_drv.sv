@@ -71,11 +71,10 @@ task reset_drv::run_phase(uvm_phase phase);
   super.run_phase(phase);
   forever begin
     seq_item_port.get_next_item(req);
-    `uvm_info(get_type_name(), $sformatf("REQ-RESET_SEQ_ITEM \n %s", req.sprint()), UVM_HIGH);
-    
+    fork
     apply_pkt_reset();
     apply_wb_reset();
-    
+    join
     seq_item_port.item_done();
   end
 endtask : run_phase
