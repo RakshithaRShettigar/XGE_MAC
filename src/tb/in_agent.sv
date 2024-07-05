@@ -21,7 +21,7 @@ class in_agent extends uvm_agent;
 endclass
 
 //class constructor
-function in_agent::new(string name = "in_agent", uvm_component parent);
+    function in_agent::new(string name = "in_agent", uvm_component parent = null);
   super.new(name, parent);
 endfunction : new
 
