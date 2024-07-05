@@ -59,3 +59,4 @@ task xgemac_base_vseq::body();
   wish_seq_h = wish_seq::type_id::create("wish_seq_h");
   reset_seq_h = reset_seq::type_id::create("reset_seq_h");
 endtask
+`endif
