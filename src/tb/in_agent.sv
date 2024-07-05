@@ -1,3 +1,10 @@
+`ifndef IN_AGENT_INCLUDED_
+`define IN_AGENT_INCLUDED_
+//--------------------------------------------------------------------------------------------
+// Class: in_agent
+// This class holds the data items required to drive the stimulus to dut
+//--------------------------------------------------------------------------------------------
+
 class in_agent extends uvm_agent;
   
 //factory registration
@@ -36,3 +43,5 @@ function void in_agent::connect_phase(uvm_phase phase);
     in_drv_h.seq_item_port.connect(in_seqr_h.seq_item_export);
 endfunction : connect_phase
 endclass
+   
+`endif
