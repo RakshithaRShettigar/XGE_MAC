@@ -15,7 +15,7 @@ class xgemac_env extends uvm_env;
   reset_agent reset_agent_h;
   xgemac_scoreboard xgemac_scoreboard_h;
   
-  extern function new(string name = "xgemac_env", uvm_component parent);
+  extern function new(string name = "xgemac_env", uvm_component parent = null);
   extern function void build_phase(uvm_phase phase);
   extern function void connect_phase(uvm_phase phase);
 
