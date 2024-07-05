@@ -27,6 +27,3 @@ endfunction : new
 endclass  
 
 `endif
-
-
-`endif
