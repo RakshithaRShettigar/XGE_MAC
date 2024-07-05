@@ -7,27 +7,27 @@
 class xgemac_env extends uvm_env;
   //factory registration
  `uvm_component_utils(xgemac_env)
+
+  //Declaring the handles
+  in_agent in_agent_h;
+  out_agent out_agent_h;
+  wishbone_agent wishbone_agent_h;
+  reset_agent reset_agent_h;
+  xgemac_scoreboard xgemac_scoreboard_h;
   
-  extern function new(string name = "in_agent", uvm_component parent);
+  extern function new(string name = "xgemac_env", uvm_component parent);
   extern function void build_phase(uvm_phase phase);
   extern function void connect_phase(uvm_phase phase);
 
 endclass
     
  //class constructor
- function new(string name = "xgemac_env", uvm_component parent);
+ function xgemac_env :: new(string name = "xgemac_env", uvm_component parent);
     super.new(name, parent);
   endfunction
- 
- //Declaring the handles
-  in_agent in_agent_h;
-  out_agent out_agent_h;
-  wishbone_agent wishbone_agent_h;
-  reset_agent reset_agent_h;
-  xgemac_scoreboard xgemac_scoreboard_h;
 
  //Build phase
-    function xgemac_env :: build_phase(uvm_phase phase);
+    function void xgemac_env :: build_phase(uvm_phase phase);
     super.build_phase(phase);
     in_agent_h = in_agent::type_id::create("in_agent_h", this);
     out_agent_h = out_agent::type_id::create("out_agent_h", this);
@@ -38,7 +38,7 @@ endclass
   endfunction
 
  //Connect phase
-   function xgemac :: connect_phase(uvm_phase phase);
+   function void xgemac :: connect_phase(uvm_phase phase);
    super.connect_phase(phase);
    in_agent_h.in_mon_h.in_port.connect(xgemac_scoreboard_h.in_active);
    out_agent_h.out_mon_h.out_port.connect(xgemac_scoreboard_h.out_passive);
