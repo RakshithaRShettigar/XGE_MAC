@@ -5,7 +5,7 @@
 //--------------------------------------------------------------------------------------------
 class out_agent extends uvm_agent;
 
-  \\factory registration
+  //factory registration
   `uvm_component_utils(out_agent)
 
   \\Declaring the handles
