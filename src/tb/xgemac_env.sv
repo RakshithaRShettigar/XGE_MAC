@@ -7,7 +7,13 @@
 class xgemac_env extends uvm_env;
   //factory registration
  `uvm_component_utils(xgemac_env)
+  
+  extern function new(string name = "in_agent", uvm_component parent);
+  extern function void build_phase(uvm_phase phase);
+  extern function void connect_phase(uvm_phase phase);
 
+endclass
+    
  //class constructor
  function new(string name = "xgemac_env", uvm_component parent);
     super.new(name, parent);
@@ -21,7 +27,7 @@ class xgemac_env extends uvm_env;
   xgemac_scoreboard xgemac_scoreboard_h;
 
  //Build phase
-  virtual function void build_phase(uvm_phase phase);
+    function void build_phase(uvm_phase phase);
     super.build_phase(phase);
     in_agent_h = in_agent::type_id::create("in_agent_h", this);
     out_agent_h = out_agent::type_id::create("out_agent_h", this);
@@ -39,5 +45,5 @@ class xgemac_env extends uvm_env;
    wishbone_agent_h.wish_mon_h.wish_port.connect(xgemac_scoreboard_h.wish_active);
   endfunction
 
-endclass
+
 `endif
