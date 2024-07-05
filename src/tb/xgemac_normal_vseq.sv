@@ -7,8 +7,14 @@ class xgemac_normal_vseq extends xgemac_base_vseq;
 
   in_seq_normal in_seq_normal_h;
   
-  
- function xgemac_normal_vseq::new(string name = "xgemac_normal_vseq");
+  extern function xgemac_normal_vseq::new(string name = "xgemac_normal_vseq");
+  extern task body();
+
+
+endclass  
+
+
+function xgemac_normal_vseq::new(string name = "xgemac_normal_vseq");
   super.new(name);
 endfunction : new
 
@@ -23,7 +29,5 @@ endfunction : new
     join
       
    endtask
-
-endclass  
-
+    
 `endif
