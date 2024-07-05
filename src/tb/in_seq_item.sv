@@ -10,9 +10,8 @@ class in_seq_item extends uvm_sequence_item;
   `uvm_object_utils(in_seq_item)
   
   //class constructor
-  function new(string name = "in_seq_item");
-    super.new(name);
-  endfunction : new
+  extern function new(string name="in_seq_item");
+
 
   //-----------------Declaration of signals-----------------
   //-----------------Packet Transmit signals-----------------
@@ -45,6 +44,10 @@ class in_seq_item extends uvm_sequence_item;
                                  (frame.size)*8 inside {[60:1514]};
                               } */
 endclass : in_seq_item
+
+function in_seq_item::new(string name = "in_seq_item");
+    super.new(name);
+endfunction : new
 
 `endif
 
