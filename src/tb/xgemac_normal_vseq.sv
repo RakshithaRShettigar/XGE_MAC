@@ -2,7 +2,7 @@
 `define XGEMAC_NORMAL_VSEQ_INCLUDED
 
 
-class xgemac_normal_vseq extends xge;
+class xgemac_normal_vseq extends xgemac_base_vseq;
   `uvm_object_utils(xgemac_normal_vseq)
 
   in_seq_normal in_seq_normal_h;
@@ -26,6 +26,7 @@ endfunction : new
 
 endclass  
 
+`endif
 
 
 `endif
