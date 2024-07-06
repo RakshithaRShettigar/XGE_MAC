@@ -2,12 +2,12 @@
 `define XGEMAC_OVERSIZE_VSEQ_INCLUDED
 
 //--------------------------------------------------------------------------------------------
-// Class: xgemac_oversized_vseq
+// Class: xgemac_oversize_vseq
 //--------------------------------------------------------------------------------------------
 class xgemac_oversize_vseq extends xgemac_base_vseq;
   `uvm_object_utils(xgemac_oversize_vseq)
   
-  //Variable : in_seq_oversized_h
+  //Variable : in_seq_oversize_h
   //Declaring handle to the virtual sequence
  
   in_seq_oversize in_seq_oversize_h;
