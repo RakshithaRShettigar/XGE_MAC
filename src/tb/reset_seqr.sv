@@ -9,7 +9,7 @@ class reset_seqr extends uvm_sequencer#(reset_seq_item);
    extern function new(string name = "reset_seqr", uvm_component parent);
   endclass
 
- //--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
 // Construct: new
 //  Initializes the reset sequencer class component
 //
@@ -17,10 +17,7 @@ class reset_seqr extends uvm_sequencer#(reset_seq_item);
 //  name - reset_sequencer
 //  parent - parent under which this component is created
 //--------------------------------------------------------------------------------------------
-
-     function new(string name = "reset_seqr", uvm_component parent);
-    super.new(name, parent);
-  
-     endfunction
-
-     `endif
+function new(string name = "reset_seqr", uvm_component parent);
+  super.new(name, parent);
+endfunction
+`endif
