@@ -28,8 +28,8 @@ class inseq_undersized extends uvm_sequence#(in_seq_item);
      
     start_item(req);
      
-    assert(req.randomize() with {req.frame.size() <= 8; // Ensure frame size is 8 or less (in 64-bit words)
-      if (req.frame.size() == 8) {
+     assert(req.randomize() with {req.frame.size()*8 <= 64; // Ensure frame size is 8 or less (in 64-bit words)
+                                  if (req.frame.size()*8 == 64) {
         req.pkt_tx_mod inside {[1:3]}; // Packet modulus range when size is 8
       }
       solve req.frame before req.pkt_tx_mod;
