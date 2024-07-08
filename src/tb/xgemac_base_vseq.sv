@@ -26,7 +26,7 @@ class xgemac_base_vseq extends uvm_sequence;
   wish_seq wish_seq_h;
 
   //Variable : reset_seq_h
-  //Declaring handle to the wish sequence
+  //Declaring handle to the reset sequence
   reset_seq wish_seq_h;
   
   //-------------------------------------------------------
