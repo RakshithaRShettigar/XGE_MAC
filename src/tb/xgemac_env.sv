@@ -22,7 +22,7 @@ class xgemac_env extends uvm_env;
 endclass
     
  //class constructor
- function xgemac_env :: new(string name = "xgemac_env", uvm_component parent);
+    function xgemac_env :: new(string name = "xgemac_env", uvm_component parent = null);
     super.new(name, parent);
   endfunction
 
