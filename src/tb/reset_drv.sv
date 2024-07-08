@@ -53,10 +53,10 @@ endfunction : new
 function void reset_drv::build_phase(uvm_phase phase);
   super.build_phase(phase);
   if(!uvm_config_db#(virtual pkt_intf)::get(this, "", "pkt_vif", pkt_vif)) begin
-    `uvm_fatal("FATAL_RD_CANNOT_GET_PKT_VIF","cannot get() pkt_vif");
+    `uvm_fatal("NO PKT_VIF","cannot get pkt_vif");
   end
   if(!uvm_config_db#(virtual wish_intf)::get(this, "", "wish_vif", wish_vif)) begin
-    `uvm_fatal("FATAL_RD_CANNOT_GET_WISH_VIF","cannot get() wish_vif");
+    `uvm_fatal("NO WISH_VIF","cannot get wish_vif");
   end
 endfunction : build_phase
 
