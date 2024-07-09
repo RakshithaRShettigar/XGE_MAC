@@ -28,12 +28,15 @@ class in_seq_normal extends uvm_sequence#(in_seq_item);
      
     start_item(req);
      
-     assert(req.randomize() with {req.frame.size()*8 inside [64:1514] ; // Ensure frame size is 8 or less (in 64-bit words)
+     assert(req.randomize() with {req.frame.size()*8 inside [64:1520] ; //To ensure total number of valid bytes is in between 60 to 1514
                                   if (req.frame.size()*8 == 64) {
-        req.pkt_tx_mod inside {[1:3]}; // Packet modulus range when size is 8
-      }
-      solve req.frame before req.pkt_tx_mod;
-    });
+                                    !(req.pkt_tx_mod inside {[1:3]}); 
+                                  }
+                                    else if(req.frame.size()*8 == 1520){
+                                      req.pkt_tx_mod inside {1,2};}
+                                    
+                                  solve req.frame before req.pkt_tx_mod;
+                                 });
      
     finish_item(req);
 
