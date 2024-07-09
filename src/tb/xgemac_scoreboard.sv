@@ -35,3 +35,4 @@ class xgemac_scoreboard extends uvm_scoreboard;
 
 endclass : xgemac_scoreboard
 
+`endif
