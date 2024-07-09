@@ -12,6 +12,18 @@ class xgemac_scoreboard extends uvm_scoreboard;
   //Declaring handle for apb_master_tx
   in_seq_item in_seq_item_h;
 
+  //Variable: in_active
+  //Declaring port for connecting in monitor with scoreboard
+  uvm_analysis_imp_activeport#(in_seq_item, xgemac_scoreboard) in_active;
+
+  //Variable: out_passive
+  //Declaring port for connecting out monitor with scoreboard
+  uvm_analysis_imp_passiveport#(in_seq_item, xgemac_scoreboard) out_passive;
+
+  //Variable: wish_active
+  //Declaring port for connecting wish monitor with scoreboard
+  uvm_analysis_imp_activeport#(in_seq_item, xgemac_scoreboard) wish_active;
+  
   //-------------------------------------------------------
   // Externally defined Tasks and Functions
   //-------------------------------------------------------
