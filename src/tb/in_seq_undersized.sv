@@ -3,23 +3,23 @@
 //--------------------------------------------------------------------------------------------
 // Class: inseq_undersized
 //--------------------------------------------------------------------------------------------
-class inseq_undersized extends uvm_sequence#(in_seq_item);
+class in_seq_undersized extends uvm_sequence#(in_seq_item);
 
   //factory registration
-  `uvm_object_utils(inseq_undersized)
+  `uvm_object_utils(in_seq_undersized)
 
-  extern function new(string name = "inseq_undersized");
+  extern function new(string name = "in_seq_undersized");
   extern task body();
   
-  endclass : inseq_undersized
+  endclass : in_seq_undersized
 
   //class constructor
-  function inseq_undersized :: new(string name = "inseq_undersized");
+    function in_seq_undersized :: new(string name = "in_seq_undersized");
     super.new(name);
   endfunction
 
   //task body
-   task inseq_undersized :: body();
+   task in_seq_undersized :: body();
      
     //Declare in_sequence_item handle
     in_seq_item req;
