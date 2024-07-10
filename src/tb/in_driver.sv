@@ -1,5 +1,5 @@
-`ifndef in_drv_INCLUDED_
-`define in_drv_INCLUDED_
+`ifndef IN_DRV_INCLUDED_
+`define IN_DRV_INCLUDED_
 
 class in_drv extends uvm_driver #(in_seq_item);
 
