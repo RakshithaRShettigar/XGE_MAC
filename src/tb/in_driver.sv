@@ -11,19 +11,23 @@ in_sequence_item isi; //sequence_item handle
 int pkt_count=0;
  
 `uvm_component_utils(in_driver)
- 
-function new(string name = "in_driver", uvm_component parent);
+
+extern function new(string name = "in_driver", uvm_component parent);
+extern virtual function void build_phase(uvm_phase phase);
+
+endclass
+
+in_driver::function new(string name = "in_driver", uvm_component parent);
     super.new(name, parent);
 endfunction
 
  // Build Phase
-virtual function void build_phase(uvm_phase phase);
+in_driver::virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
   if(!uvm_config_db#(virtual pkt_interface)::get(this, "", "pkt_vif", pkt_vif))
     `uvm_fatal("In Sequence Driver: ", "No vif is found!")
 endfunction
-
-
+  
 virtual task run_phase(uvm_phase phase);
 
 //  EDITING HERE 
@@ -70,9 +74,7 @@ virtual task run_phase(uvm_phase phase);
       
          seq_item_port.item_done();
         end
-   
+
 endtask
-   
-endclass
 
 `endif
