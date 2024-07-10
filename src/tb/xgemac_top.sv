@@ -20,15 +20,10 @@ always #5 wb_clk_i = ~wb_clk_i;
   initial begin
     clk_156m25 = 0;
     wb_clk_i = 0;
-   // wb_rst_i=1;reset_156m25_n=0;
-  //  #12
-  //  wb_rst_i=0;reset_156m25_n=1;
   end
   
   wish_intf wish_vif(wb_clk_i, wb_rst_i);  
-  
-  
-  
+   
   xge_mac uut(
                .wb_clk_i(wish_vif.wb_clk_i),
                .wb_rst_i(wish_vif.wb_rst_i),
