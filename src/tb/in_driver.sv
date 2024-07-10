@@ -57,14 +57,14 @@ virtual task in_driver::run_phase(uvm_phase phase);
                         end
                     else
                         begin
-                            pkt_vif.pkt_tx_val<=0; //Enabling transaction
+                            pkt_vif.pkt_tx_val<=0; //Disabling transaction
                             pkt_vif.pkt_tx_eop<=0;
                             pkt_vif.pkt_tx_sop<=0;
                         end
                  end
               else
                         begin
-                            pkt_vif.pkt_tx_val<=0;
+                            pkt_vif.pkt_tx_val<=0; //Disabling transaction
                             pkt_vif.pkt_tx_eop<=0;
                             pkt_vif.pkt_tx_sop<=0;
                         end
