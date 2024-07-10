@@ -2,11 +2,11 @@
 `ifndef IN_DRIVER_INCLUDED_
 `define IN_DRIVER_INCLUDED_
 
-class in_driver extends uvm_driver #(in_sequence_item);
+class in_driver extends uvm_driver #(in_seq_item);
 
 virtual pkt_interface pkt_vif; //declaring the packet interface handle as virtual
   
-in_sequence_item isi; //sequence_item handle
+in_seq_item isi; //sequence_item handle
 
 int pkt_count=0;
  
