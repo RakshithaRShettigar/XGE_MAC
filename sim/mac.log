@@ -1,0 +1,161 @@
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 25 2017
+Start time: 16:40:36 on Jul 11,2024
+vlog -sv -l mac.log -f mac_compile.f 
+-- Compiling module fault_sm
+-- Compiling module generic_fifo
+-- Compiling module generic_fifo_ctrl
+-- Compiling module generic_mem_medium
+-- Compiling module generic_mem_small
+-- Compiling module meta_sync
+-- Compiling module meta_sync_single
+-- Compiling module rx_data_fifo
+-- Compiling module rx_dequeue
+-- Compiling module rx_enqueue
+-- Compiling module rx_hold_fifo
+-- Compiling module sync_clk_core
+-- Compiling module sync_clk_wb
+-- Compiling module sync_clk_xgmii_tx
+-- Compiling module tx_data_fifo
+-- Compiling module tx_dequeue
+-- Compiling module tx_enqueue
+-- Compiling module tx_hold_fifo
+-- Compiling module wishbone_if
+-- Compiling module xge_mac
+-- Compiling interface wish_intf
+-- Compiling interface pkt_interface
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(7)
+** at ../src/rtl/../rtl/fault_sm.sv(41): (vlog-2275) 'fault_sm' already exists and will be overwritten.
+-- Compiling module fault_sm
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(8)
+** at ../src/rtl/../rtl/generic_mem_small.sv(40): (vlog-2275) 'generic_mem_small' already exists and will be overwritten.
+-- Compiling module generic_mem_small
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(9)
+** at ../src/rtl/../rtl/generic_mem_medium.sv(40): (vlog-2275) 'generic_mem_medium' already exists and will be overwritten.
+-- Compiling module generic_mem_medium
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(10)
+** at ../src/rtl/../rtl/generic_fifo_ctrl.sv(39): (vlog-2275) 'generic_fifo_ctrl' already exists and will be overwritten.
+-- Compiling module generic_fifo_ctrl
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(11)
+** at ../src/rtl/../rtl/generic_fifo.sv(40): (vlog-2275) 'generic_fifo' already exists and will be overwritten.
+-- Compiling module generic_fifo
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(12)
+** at ../src/rtl/../rtl/meta_sync.sv(39): (vlog-2275) 'meta_sync' already exists and will be overwritten.
+-- Compiling module meta_sync
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(13)
+** at ../src/rtl/../rtl/meta_sync_single.sv(39): (vlog-2275) 'meta_sync_single' already exists and will be overwritten.
+-- Compiling module meta_sync_single
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(14)
+** at ../src/rtl/../rtl/rx_hold_fifo.sv(41): (vlog-2275) 'rx_hold_fifo' already exists and will be overwritten.
+-- Compiling module rx_hold_fifo
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(15)
+** at ../src/rtl/../rtl/rx_data_fifo.sv(41): (vlog-2275) 'rx_data_fifo' already exists and will be overwritten.
+-- Compiling module rx_data_fifo
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(16)
+** at ../src/rtl/../rtl/rx_dequeue.sv(41): (vlog-2275) 'rx_dequeue' already exists and will be overwritten.
+-- Compiling module rx_dequeue
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(17)
+** at ../src/rtl/../rtl/rx_enqueue.sv(41): (vlog-2275) 'rx_enqueue' already exists and will be overwritten.
+-- Compiling module rx_enqueue
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(18)
+** at ../src/rtl/../rtl/sync_clk_core.sv(41): (vlog-2275) 'sync_clk_core' already exists and will be overwritten.
+-- Compiling module sync_clk_core
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(19)
+** at ../src/rtl/../rtl/sync_clk_wb.sv(41): (vlog-2275) 'sync_clk_wb' already exists and will be overwritten.
+-- Compiling module sync_clk_wb
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(20)
+** at ../src/rtl/../rtl/sync_clk_xgmii_tx.sv(41): (vlog-2275) 'sync_clk_xgmii_tx' already exists and will be overwritten.
+-- Compiling module sync_clk_xgmii_tx
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(21)
+** at ../src/rtl/../rtl/tx_hold_fifo.sv(41): (vlog-2275) 'tx_hold_fifo' already exists and will be overwritten.
+-- Compiling module tx_hold_fifo
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(22)
+** at ../src/rtl/../rtl/tx_data_fifo.sv(41): (vlog-2275) 'tx_data_fifo' already exists and will be overwritten.
+-- Compiling module tx_data_fifo
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(23)
+** at ../src/rtl/../rtl/tx_dequeue.sv(41): (vlog-2275) 'tx_dequeue' already exists and will be overwritten.
+-- Compiling module tx_dequeue
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(24)
+** at ../src/rtl/../rtl/tx_enqueue.sv(41): (vlog-2275) 'tx_enqueue' already exists and will be overwritten.
+-- Compiling module tx_enqueue
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(25)
+** at ../src/rtl/../rtl/wishbone_if.sv(41): (vlog-2275) 'wishbone_if' already exists and will be overwritten.
+-- Compiling module wishbone_if
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(8)
+** while parsing file included at ../src/tb/design_pkg_old.sv(26)
+** at ../src/rtl/../rtl/xge_mac.sv(41): (vlog-2275) 'xge_mac' already exists and will be overwritten.
+-- Compiling module xge_mac
+-- Compiling package xgemac_pkg
+** Note: (vlog-2286) ../src/tb/xgemac_pkg.sv(4): Using implicit +incdir+/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Error: ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(21)
+** at ../src/tb/in_mon.sv(66): Illegal declaration after the statement near line '62'.  Declarations must precede statements.  Look for stray semicolons.
+** Error: ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** at ../src/tb/xgemac_pkg.sv(22): Cannot find `include file "out_mon.sv" in directories:
+    ../src/rtl, ../src/tb, /tools/mentor/questasim_10.6c/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(24)
+** at ../src/tb/xgemac_scoreboard.sv(54): (vlog-2217) No default specified for 'parent'.  Default must match the value specified in class at ../src/tb/xgemac_scoreboard.sv(38) for strict LRM compliance.
+** Error: ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(24)
+** at ../src/tb/xgemac_scoreboard.sv(93): 'run_phase' is not declared as a function in class 'xgemac_scoreboard'.
+** Error: ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(24)
+** at ../src/tb/xgemac_scoreboard.sv(96): (vlog-2163) Macro `no_of_frames is undefined.
+** Error: (vlog-13069) ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(24)
+** at ../src/tb/xgemac_scoreboard.sv(96): near ")": syntax error, unexpected ')'.
+** Error: ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(24)
+** at ../src/tb/xgemac_scoreboard.sv(99): (vlog-2730) Undefined variable: 'in_size'.
+** Error: ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(24)
+** at ../src/tb/xgemac_scoreboard.sv(100): (vlog-2730) Undefined variable: 'out_size'.
+** Error: (vlog-13069) ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(24)
+** at ../src/tb/xgemac_scoreboard.sv(120): near "end": syntax error, unexpected end.
+** Error: ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(25)
+** while parsing macro expansion: 'uvm_object_utils' starting at ../src/tb/xgemac_base_vseq.sv(10)
+** at ../src/tb/xgemac_base_vseq.sv(10): (vlog-2730) Undefined variable: 'apb_virtual_base_seq'.
+** Warning: ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(25)
+** while parsing macro expansion: 'uvm_object_utils' starting at ../src/tb/xgemac_base_vseq.sv(10)
+** at ../src/tb/xgemac_base_vseq.sv(10): (vlog-2953) Incorrect usage of keyword 'static'.
+** Error: (vlog-13069) ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(25)
+** while parsing macro expansion: 'uvm_object_utils' starting at ../src/tb/xgemac_base_vseq.sv(10)
+** at ../src/tb/xgemac_base_vseq.sv(10): near "function": syntax error, unexpected function, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+** Error: (vlog-13069) ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(25)
+** while parsing macro expansion: 'uvm_object_utils' starting at ../src/tb/xgemac_base_vseq.sv(10)
+** at ../src/tb/xgemac_base_vseq.sv(10): near ";": syntax error, unexpected ';', expecting '('.
+** Error: ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(25)
+** while parsing macro expansion: 'uvm_object_utils' starting at ../src/tb/xgemac_base_vseq.sv(10)
+** at ../src/tb/xgemac_base_vseq.sv(10): (vlog-2730) Undefined variable: 'tmp'.
+** Error: (vlog-13069) ** while parsing file included at ../src/tb/xgemac_top.sv(9)
+** while parsing file included at ../src/tb/xgemac_pkg.sv(25)
+** while parsing macro expansion: 'uvm_object_utils' starting at ../src/tb/xgemac_base_vseq.sv(10)
+** at ../src/tb/xgemac_base_vseq.sv(10): near "function": syntax error, unexpected function, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+End time: 16:40:37 on Jul 11,2024, Elapsed time: 0:00:01
+Errors: 13, Warnings: 22
