@@ -57,12 +57,13 @@ endfunction : build_phase
 //--------------------------------------------------------------------------------------------
 task in_mon::run_phase(uvm_phase phase);
   super.run_phase(phase);
+  in_seq_item item = in_seq_item::type_id::create("item");
  
-  forever begin
+ forever begin
     @(posedge pkt_vif.pkt_in_mon_mp.clk_156m25);
  
     // Collecting signals
-    in_seq_item item = in_seq_item::type_id::create("item");
+   
     item.pkt_tx_data = pkt_vif.pkt_in_mon_mp.pkt_in_mon_cb.pkt_tx_data;
     item.pkt_tx_sop  = pkt_vif.pkt_in_mon_mp.pkt_in_mon_cb.pkt_tx_sop;
     item.pkt_tx_eop  = pkt_vif.pkt_in_mon_mp.pkt_in_mon_cb.pkt_tx_eop;
