@@ -21,7 +21,7 @@ function in_drv::new(string name = "in_drv", uvm_component parent);
     super.new(name, parent);
 endfunction
 
-virtual function void in_drv::build_phase(uvm_phase phase);
+function void in_drv::build_phase(uvm_phase phase);
     super.build_phase(phase);
   if(!uvm_config_db#(virtual pkt_interface)::get(this, "", "pkt_vif", pkt_vif))
     `uvm_fatal("In Sequence Driver: ", "No vif is found!")
