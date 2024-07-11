@@ -13,8 +13,8 @@ module xgemac_top;
 
    bit wb_clk_i,clk_156m25, reset_156m25_n, wb_rst_i;
  
-always #1200 clk_156m25 = ~clk_156m25;
-always #5000 wb_clk_i = ~wb_clk_i;
+always #1200 clk_156m25 = ~clk_156m25; // frequency 156.25MHz
+always #5000 wb_clk_i = ~wb_clk_i; // We have considered the Wishbone clock frequency as 100MHz
 
 
   initial begin
