@@ -29,8 +29,8 @@ class in_seq_oversize extends uvm_sequence#(in_seq_item);
     start_item(req);
      
      assert(req.randomize() with {req.frame.size()*8 > 1520; 
-                                  if (req.frame.size()*8 > 1520) {
-        req.pkt_tx_mod inside {[1:3]}; 
+                                  if (req.frame.size()*8 == 1520) {
+                                    !(req.pkt_tx_mod inside {[1:2]}; 
       }
       solve req.frame before req.pkt_tx_mod;
     });
