@@ -12,7 +12,7 @@ class in_mon extends uvm_monitor;
   virtual pkt_interface pkt_vif;
   // Variable: ap
   // Declaring analysis port for the monitor port
-  uvm_analysis_port#(in_seq_item) ap;
+ uvm_analysis_port#(in_seq_item) in_mon_port;
  
   //-------------------------------------------------------
   // Externally defined Tasks and Functions
@@ -74,7 +74,7 @@ task in_mon::run_phase(uvm_phase phase);
     `uvm_info(get_type_name, $sformatf("[IN MONITOR] pkt_tx_data = %0h, pkt_tx_sop = %0d, pkt_tx_eop = %0d, pkt_tx_val = %0d, pkt_tx_mod = %0d, pkt_tx_full = %0d",
                                        item.pkt_tx_data, item.pkt_tx_sop, item.pkt_tx_eop, item.pkt_tx_val, item.pkt_tx_mod, item.pkt_tx_full), UVM_LOW);
     // calling the write function
-    ap.write(item);
+  in_mon_port.write(item);
   end
 endtask : run_phase
  
