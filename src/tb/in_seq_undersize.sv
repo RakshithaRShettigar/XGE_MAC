@@ -6,7 +6,7 @@
 class in_seq_undersize extends uvm_sequence#(in_seq_item);
 
   //factory registration
-  `uvm_object_utils(in_seq_undersized)
+  `uvm_object_utils(in_seq_undersize)
 
   extern function new(string name = "in_seq_undersize");
   extern task body();
