@@ -8,7 +8,7 @@ class in_seqr extends uvm_sequencer #(in_seq_item);
   //factory registration
   `uvm_component_utils(in_seqr)
   
-extern function new(string name = "in_seqr", uvm_component parent);
+  extern function new(string name = "in_seqr", uvm_component parent = null);
 endclass
   
 //class constructor  
