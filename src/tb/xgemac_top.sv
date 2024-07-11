@@ -4,8 +4,8 @@
 `define TB_INCLUDED_
 
 `include "wish_intf.sv"
-`include "pkt_intf.sv"
-`include "design_old_pkg.sv"
+`include "pkt_interface.sv"
+`include "pkg_old.sv"
 `include "xgemac_pkg.sv"
 
 
