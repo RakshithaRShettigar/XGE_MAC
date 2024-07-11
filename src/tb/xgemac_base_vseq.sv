@@ -7,7 +7,7 @@
 //--------------------------------------------------------------------------------------------
 class xgemac_base_vseq extends uvm_sequence;
 
-  `uvm_object_utils(apb_virtual_base_seq)
+  `uvm_object_utils(xgemac_base_vseq)
   
   //Variable : in_seqr_h
   //Declaring handle to the in sequencer
