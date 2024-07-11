@@ -1,7 +1,7 @@
 `ifndef DESIGN_PKG_OLD_INCLUDED_
 `define DESIGN_PKG_OLD_INCLUDED_
 
-package design_pkg_old;
+
 
 
 `include "../rtl/fault_sm.sv"
@@ -25,7 +25,6 @@ package design_pkg_old;
 `include "../rtl/wishbone_if.sv"
 `include "../rtl/xge_mac.sv"
 
-  
-endpackage
+
 
 `endif
