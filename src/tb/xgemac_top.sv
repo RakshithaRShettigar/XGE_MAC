@@ -1,3 +1,5 @@
+`timescale 1ps / 1ps
+
 `ifndef TB_INCLUDED_
 `define TB_INCLUDED_
 
@@ -11,8 +13,8 @@ module xgemac_top;
 
    bit wb_clk_i,clk_156m25, reset_156m25_n, wb_rst_i;
  
-always #5 clk_156m25 = ~clk_156m25;
-always #5 wb_clk_i = ~wb_clk_i;
+always #1200 clk_156m25 = ~clk_156m25;
+always #5000 wb_clk_i = ~wb_clk_i;
 
 
   initial begin
