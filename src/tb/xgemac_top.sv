@@ -5,19 +5,25 @@ import uvm_pkg::*;
 `include "uvm_macros.svh"
 `include "wish_intf.sv"
 `include "wish_test.sv"
+`include "pkt_intf.sv"
 `include "design.sv"
  
 module xgemac_top;
 
+   bit wb_clk_i,clk_156m25, reset_156m25_n, wb_rst_i;
+ 
 always #5 clk_156m25 = ~clk_156m25;
 always #5 wb_clk_i = ~wb_clk_i;
-  
+
+
   initial begin
+   
     clk_156m25 = 0;
     wb_clk_i = 0;
+   
   end
   wish_intf wish_vif(wb_clk_i, wb_rst_i);  
-  bit wb_clk_i,clk_156m25, reset_156m25_n, wb_rst_i;
+
   wishbone_interface wish_vif(wb_clk_i,wb_rst_i);                                                        
   pkt_interface pkt_vif(clk_156m25,reset_156m25_n);                                                                           
   xge_mac DUV(.wb_int_o(pkt_vif.wb_int_o),
@@ -52,7 +58,7 @@ always #5 wb_clk_i = ~wb_clk_i;
   initial begin
     uvm_config_db#(virtual wish_intf)::set(null, "", "wish_vif", wish_vif);
     
-    uvm_config_db#(virtual pkt_interface)::set(null, "", "", pkt_vif);
+   uvm_config_db#(virtual pkt_interface)::set(null, "", "pkt_vif", pkt_vif);
 
     $dumpfile("dump.vcd"); 
     $dumpvars;
