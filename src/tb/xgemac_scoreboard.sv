@@ -85,6 +85,21 @@ function xgemac_scoreboard::write_outpassiveport(in_seq_item in_seq_item_h);
   end
 endfunction
 
+function xgemac_scoreboard::write_wishactiveport(in_seq_item in_seq_item_h);
+  if((in_seq_item_h.pkt_rx_val == 1) && (in_seq_item_h.pkt_rx_eop != 1)) begin
+    frame_out.push_back(in_seq_item_h.pkt_rx_data);
+    out_count++;
+  end
+  else if((in_seq_item_h.pkt_rx_val == 1) && (in_seq_item_h.pkt_rx_eop == 1)) begin
+    out_count++;
+    frame_out.push_back(in_seq_item_h.pkt_rx_data);
+    size_out.push_back(out_count);
+    out_count = 0;
+    ->e;
+  end
+endfunction
+
+
 function xgemac_scoreboard::run_phase(uvm_phase phase);
   int frame_count;
   int packet_count;
