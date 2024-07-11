@@ -5,7 +5,7 @@
 
 `include "wish_intf.sv"
 `include "pkt_interface.sv"
-`include "pkg_old.sv"
+`include "design_pkg_old.sv"
 `include "xgemac_pkg.sv"
 
 
