@@ -23,8 +23,7 @@ always #5 wb_clk_i = ~wb_clk_i;
    
   end
   wish_intf wish_vif(wb_clk_i, wb_rst_i);  
-
-  wishbone_interface wish_vif(wb_clk_i,wb_rst_i);                                                        
+                                                       
   pkt_interface pkt_vif(clk_156m25,reset_156m25_n);                                                                           
   xge_mac DUV(.wb_int_o(pkt_vif.wb_int_o),
               . wb_dat_o(pkt_vif.wb_dat_o),
