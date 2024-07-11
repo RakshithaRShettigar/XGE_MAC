@@ -6,8 +6,8 @@ package xgemac_pkg;
 
   `include "in_seq_item.sv"
   `include "in_seq_normal.sv"
-  `include "in_seq_oversized.sv"
-  `include "in_seq_undersized.sv"
+  `include "in_seq_oversize.sv"
+  `include "in_seq_undersize.sv"
   `include "reset_seq.sv"
   `include "wish_seq.sv"
   `include "wish_seqr.sv"
