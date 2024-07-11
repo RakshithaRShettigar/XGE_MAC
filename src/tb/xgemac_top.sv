@@ -24,9 +24,9 @@ always #5 wb_clk_i = ~wb_clk_i;
   wish_intf wish_vif(wb_clk_i, wb_rst_i);  
                                                        
   pkt_interface pkt_vif(clk_156m25,reset_156m25_n);                                                                           
-  xge_mac DUV(.wb_int_o(pkt_vif.wb_int_o),
-              . wb_dat_o(pkt_vif.wb_dat_o),
-              . wb_ack_o(pkt_vif.wb_ack_o),
+   xge_mac DUV(.wb_int_o(wish_vif.wb_int_o),
+               . wb_dat_o(wish_vif.wb_dat_o),
+               . wb_ack_o(wish_vif.wb_ack_o),
               . pkt_tx_full(pkt_vif.pkt_tx_full),
               .pkt_rx_val(pkt_vif.pkt_rx_val),
               .pkt_rx_sop(pkt_vif.pkt_rx_sop),
