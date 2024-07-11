@@ -40,7 +40,7 @@ class xgemac_scoreboard extends uvm_scoreboard;
   extern virtual function void write_inactiveport(in_seq_item in_seq_item_h);
   extern virtual function void write_outpassiveport(in_seq_item in_seq_item_h);
   extern virtual function void write_wishactiveport(in_seq_item in_seq_item_h);
-  extern virtual task run_phase(uvm_phase phase);
+  extern task run_phase(uvm_phase phase);
 endclass : xgemac_scoreboard
 
 //--------------------------------------------------------------------------------------------
@@ -90,7 +90,7 @@ function xgemac_scoreboard::write_wishactiveport(in_seq_item in_seq_item_h);
 endfunction
 
 
-function xgemac_scoreboard::run_phase(uvm_phase phase);
+task xgemac_scoreboard::run_phase(uvm_phase phase);
   int frame_count;
   int packet_count;
   repeat(`no_of_frames) begin
@@ -118,5 +118,5 @@ function xgemac_scoreboard::run_phase(uvm_phase phase);
         `uvm_info(get_type_name(),$sformatf("Frame %0d sizes have MISMATCHED"),UVM_LOW);
       end : SIZE_MISMATCHED
   end
-endfunction      
+endtask     
 `endif
