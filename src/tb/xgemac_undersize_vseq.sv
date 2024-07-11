@@ -23,7 +23,7 @@ endclass : xgemac_undersize_vseq
   //task body
    task  xgemac_undersize_vseq :: body();
     `uvm_info(get_type_name(), "virtual_seq: Inside Body", UVM_LOW);
-     in_seq_normal_h = in_seq_normal::type_id::create("in_seq_normal_h"); 
+     in_seq_undersize_h = in_seq_undersize::type_id::create("in_seq_undersize_h"); 
      fork
       in_seq_undersize_h.start(in_seqr_h);
       wish_seq_h.start(wish_seqr_h);
