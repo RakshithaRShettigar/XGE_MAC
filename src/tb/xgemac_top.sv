@@ -1,14 +1,12 @@
 `ifndef TB_INCLUDED_
 `define TB_INCLUDED_
- 
-import uvm_pkg::*;
-`include "uvm_macros.svh"
+
 `include "wish_intf.sv"
-`include "wish_test.sv"
 `include "pkt_intf.sv"
-`include "design.sv"
-`include "xgemac_normal_test.sv"
- 
+`include "design_old_pkg.sv"
+`include "xgemac_pkg.sv"
+
+
 module xgemac_top;
 
    bit wb_clk_i,clk_156m25, reset_156m25_n, wb_rst_i;
@@ -56,14 +54,20 @@ always #5 wb_clk_i = ~wb_clk_i;
   
 
   initial begin
+   
     uvm_config_db#(virtual wish_intf)::set(null, "", "wish_vif", wish_vif);
     
-   uvm_config_db#(virtual pkt_interface)::set(null, "", "pkt_vif", pkt_vif);
+    uvm_config_db#(virtual pkt_interface)::set(null, "", "pkt_vif", pkt_vif);
 
+    run_test("xgemac_base_test");
+   
+  end
+
+ initial begin
     $dumpfile("dump.vcd"); 
     $dumpvars;
-   run_test("xgemac_normal_test");
-  end
+ end
+ 
 endmodule
  
 `endif
