@@ -3,7 +3,7 @@
 //--------------------------------------------------------------------------------------------
 // Class: inseq_oversized
 //--------------------------------------------------------------------------------------------
-class in_seq_overrsize extends uvm_sequence#(in_seq_item);
+class in_seq_oversize extends uvm_sequence#(in_seq_item);
 
   //factory registration
   `uvm_object_utils(in_seq_oversize)
