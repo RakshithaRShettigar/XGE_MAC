@@ -17,7 +17,8 @@ class reset_seqr extends uvm_sequencer#(reset_seq_item);
 //  name - reset_sequencer
 //  parent - parent under which this component is created
 //--------------------------------------------------------------------------------------------
-function new(string name = "reset_seqr", uvm_component parent);
+function reset_seqr::new(string name = "reset_seqr", uvm_component parent);
   super.new(name, parent);
 endfunction
+     
 `endif
