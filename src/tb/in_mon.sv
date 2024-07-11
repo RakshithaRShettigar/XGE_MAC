@@ -33,7 +33,7 @@ endclass : in_mon
 //--------------------------------------------------------------------------------------------
 function in_mon::new(string name = "in_mon", uvm_component parent);
   super.new(name, parent);
-  ap = new("ap", this);
+ in_mon = new("in_mon", this);
 endfunction : new
  
 //--------------------------------------------------------------------------------------------
