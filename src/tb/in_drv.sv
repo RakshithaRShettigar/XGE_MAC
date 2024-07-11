@@ -12,8 +12,8 @@ int pkt_count=0;
 `uvm_component_utils(in_drv)
 
 extern function new(string name = "in_drv", uvm_component parent);
-extern virtual function void build_phase(uvm_phase phase);
-extern virtual task run_phase(uvm_phase phase);
+extern function void build_phase(uvm_phase phase);
+extern task run_phase(uvm_phase phase);
   
 endclass
 
@@ -27,7 +27,7 @@ function void in_drv::build_phase(uvm_phase phase);
     `uvm_fatal("In Sequence Driver: ", "No vif is found!")
 endfunction
   
-virtual task in_drv::run_phase(uvm_phase phase);
+task in_drv::run_phase(uvm_phase phase);
 
     forever begin
       seq_item_port.get_next_item(in_seq_item_h);
