@@ -8,18 +8,18 @@ class in_seq_undersize extends uvm_sequence#(in_seq_item);
   //factory registration
   `uvm_object_utils(in_seq_undersized)
 
-  extern function new(string name = "in_seq_undersized");
+  extern function new(string name = "in_seq_undersize");
   extern task body();
   
-  endclass : in_seq_undersized
+  endclass : in_seq_undersize
 
   //class constructor
-    function in_seq_undersized :: new(string name = "in_seq_undersized");
+    function in_seq_undersize :: new(string name = "in_seq_undersize");
     super.new(name);
   endfunction
 
   //task body
-   task in_seq_undersized :: body();
+   task in_seq_undersize :: body();
      
     //Declare in_sequence_item handle
     in_seq_item req;
