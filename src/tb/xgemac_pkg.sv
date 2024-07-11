@@ -5,8 +5,8 @@ package xgemac_pkg;
   import uvm_pkg::*;
 
   `include "in_seq_item.sv"
-  `include "reset_seq_item"
-  `include "wish_seq_item"
+  `include "reset_seq_item.sv"
+  `include "wish_seq_item.sv"
   `include "in_seq_normal.sv"
   `include "in_seq_oversize.sv"
   `include "in_seq_undersize.sv"
