@@ -7,6 +7,7 @@ import uvm_pkg::*;
 `include "wish_test.sv"
 `include "pkt_intf.sv"
 `include "design.sv"
+`include "xgemac_normal_test.sv"
  
 module xgemac_top;
 
@@ -61,7 +62,7 @@ always #5 wb_clk_i = ~wb_clk_i;
 
     $dumpfile("dump.vcd"); 
     $dumpvars;
-    run_test("wish_test");
+   run_test("xgemac_normal_test");
   end
 endmodule
  
