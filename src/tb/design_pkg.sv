@@ -1,5 +1,5 @@
-`ifndef DESIGN_PKG_INCLUDED
-`define DESIGN_PKG_INCLUDED
+`ifndef DESIGN_PKG_INCLUDED_
+`define DESIGN_PKG_INCLUDED_
 
 package design_pkg;
 
