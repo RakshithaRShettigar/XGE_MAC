@@ -40,7 +40,7 @@ task in_seq_normal :: body();
 
   //Sequencer Driver handshaking
   start_item(req);   
-  assert(req.randomize() with {req.frame.size()*8 inside [64:1520] ; //To ensure total number of valid bytes is in between 60 to 1514
+  assert(req.randomize() with {req.frame.size()*8 inside {[64:1520]} ; //To ensure total number of valid bytes is in between 60 to 1514
                                 if (req.frame.size()*8 == 64) {
                                   !(req.pkt_tx_mod inside {[1:3]}); 
                                 }
