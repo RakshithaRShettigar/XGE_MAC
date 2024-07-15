@@ -10,9 +10,12 @@ class in_mon extends uvm_monitor;
   // Variable: pkt_vif
   // Declaring handle for pkt interface
   virtual pkt_interface pkt_vif;
-  // Variable: ap
+  // Variable: item
+  // Declaring packet for in_seq_item
+  in_seq_item item;
+  // Variable: in_mon_port
   // Declaring analysis port for the monitor port
- uvm_analysis_port#(in_seq_item) in_mon_port;
+  uvm_analysis_port#(in_seq_item) in_mon_port;
  
   //-------------------------------------------------------
   // Externally defined Tasks and Functions
@@ -33,7 +36,7 @@ endclass : in_mon
 //--------------------------------------------------------------------------------------------
 function in_mon::new(string name = "in_mon", uvm_component parent);
   super.new(name, parent);
- in_mon = new("in_mon", this);
+  in_mon_port = new("in_mon_port", this);
 endfunction : new
  
 //--------------------------------------------------------------------------------------------
@@ -57,7 +60,7 @@ endfunction : build_phase
 //--------------------------------------------------------------------------------------------
 task in_mon::run_phase(uvm_phase phase);
   super.run_phase(phase);
-  in_seq_item item = in_seq_item::type_id::create("item");
+  item = in_seq_item::type_id::create("item");
  
  forever begin
     @(posedge pkt_vif.pkt_in_mon_mp.clk_156m25);
@@ -69,7 +72,7 @@ task in_mon::run_phase(uvm_phase phase);
     item.pkt_tx_eop  = pkt_vif.pkt_in_mon_mp.pkt_in_mon_cb.pkt_tx_eop;
     item.pkt_tx_val  = pkt_vif.pkt_in_mon_mp.pkt_in_mon_cb.pkt_tx_val;
     item.pkt_tx_mod  = pkt_vif.pkt_in_mon_mp.pkt_in_mon_cb.pkt_tx_mod;
-    item.pkt_tx_full = pkt_vif.pkt_in_mon_mp.pkt_in_mon_cb.pkt_tx_full;
+    // item.pkt_tx_full = pkt_vif.pkt_in_mon_mp.pkt_in_mon_cb.pkt_tx_full;
  
     `uvm_info(get_type_name, $sformatf("[IN MONITOR] pkt_tx_data = %0h, pkt_tx_sop = %0d, pkt_tx_eop = %0d, pkt_tx_val = %0d, pkt_tx_mod = %0d, pkt_tx_full = %0d",
                                        item.pkt_tx_data, item.pkt_tx_sop, item.pkt_tx_eop, item.pkt_tx_val, item.pkt_tx_mod, item.pkt_tx_full), UVM_LOW);

@@ -10,7 +10,7 @@ class out_mon extends uvm_monitor;
   
   // Variable: pkt_vif
   // Declaring handle for pkt interface
-  virtual pkt_intf pkt_vif;
+  virtual pkt_interface pkt_vif;
    
   // Variable: in_seq_item_h
   // Declaring handle for in_seq_item class 
@@ -52,7 +52,7 @@ endfunction : new
 //--------------------------------------------------------------------------------------------
 function void out_mon::build_phase(uvm_phase phase);
   super.build_phase(phase);
-  if (!uvm_config_db#(virtual pkt_intf)::get(this, "", "pkt_vif", pkt_vif)) begin
+  if (!uvm_config_db#(virtual pkt_interface)::get(this, "", "pkt_vif", pkt_vif)) begin
     `uvm_fatal("NO PKT_VIF", {"virtual interface must be set for: ", get_full_name(), ".PKT_VIF"});
   end
 endfunction : build_phase
@@ -90,10 +90,10 @@ task out_mon::run_phase(uvm_phase phase);
     in_seq_item_h.pkt_rx_err = pkt_vif.pkt_out_mon_mp.pkt_out_mon_cb.pkt_rx_err;
 
 
-    `uvm_info(get_type_name, $sformatf("[OUT MONITOR] pkt_rx_avail = %0d, pkt_rx_data = %0h,  pkt_rx_eop = %0d, pkt_rx_val = %0d,
+    `uvm_info(get_type_name, $sformatf("[OUT MONITOR] pkt_rx_avail = %0d, pkt_rx_data = %0h,  pkt_rx_eop = %0d, pkt_rx_val = %0d,\
                                         pkt_rx_sop = %0d, pkt_rx_mod = %0d,pkt_rx_err = %0d", in_seq_item_h.pkt_rx_avail,in_seq_item_h.pkt_rx_data,
-                                       in_seq_item_h.pkt_rx_eop,in_seq_item_h.pkt_rx_val,in_seq_item_h.pkt_rx_sop,
-                                      in_seq_item_h.pkt_rx_mod,in_seq_item_h.pkt_rx_err), UVM_LOW);
+                                        in_seq_item_h.pkt_rx_eop,in_seq_item_h.pkt_rx_val,in_seq_item_h.pkt_rx_sop,
+                                        in_seq_item_h.pkt_rx_mod,in_seq_item_h.pkt_rx_err), UVM_LOW);
     
     // calling the write function
     out_mon_port.write(in_seq_item_h);

@@ -23,7 +23,7 @@ class xgemac_scoreboard extends uvm_scoreboard;
 
   //Variable: wish_active
   //Declaring port for connecting wish monitor with scoreboard
-  uvm_analysis_imp_wishactiveport#(in_seq_item, xgemac_scoreboard) wish_active;
+  uvm_analysis_imp_wishactiveport#(wish_seq_item, xgemac_scoreboard) wish_active;
 
   int in_size, out_size;
   int in_count, out_count;
@@ -36,10 +36,10 @@ class xgemac_scoreboard extends uvm_scoreboard;
   // Externally defined Tasks and Functions
   //-------------------------------------------------------
   extern function new(string name = "xgemac_scoreboard", uvm_component parent = null);
-  extern virtual function void build_phase(uvm_phase phase);
-  extern virtual function void write_inactiveport(in_seq_item in_seq_item_h);
-  extern virtual function void write_outpassiveport(in_seq_item in_seq_item_h);
-  extern virtual function void write_wishactiveport(in_seq_item in_seq_item_h);
+  // extern function void build_phase(uvm_phase phase);
+  extern function write_inactiveport(in_seq_item in_seq_item_h);
+  extern function write_outpassiveport(in_seq_item in_seq_item_h);
+  extern function write_wishactiveport(wish_seq_item wish_seq_item_h);
   extern task run_phase(uvm_phase phase);
 endclass : xgemac_scoreboard
 
@@ -51,7 +51,7 @@ endclass : xgemac_scoreboard
 //  name   - xgemac_scoreboard
 //  parent - parent under which this component is created
 //--------------------------------------------------------------------------------------------
-function xgemac_scoreboard::new(string name = "xgemac_scoreboard", uvm_component parent);
+function xgemac_scoreboard::new(string name = "xgemac_scoreboard", uvm_component parent = null);
   super.new(name, parent);
   in_active = new("in_active", this);
   out_passive = new("out_passive", this);
@@ -85,7 +85,7 @@ function xgemac_scoreboard::write_outpassiveport(in_seq_item in_seq_item_h);
   end
 endfunction
 
-function xgemac_scoreboard::write_wishactiveport(in_seq_item in_seq_item_h);
+function xgemac_scoreboard::write_wishactiveport(wish_seq_item wish_seq_item_h);
 
 endfunction
 
@@ -93,14 +93,14 @@ endfunction
 task xgemac_scoreboard::run_phase(uvm_phase phase);
   int frame_count;
   int packet_count;
-  repeat(`no_of_frames) begin
-    frame_count++
+  repeat(1) begin // TODO: change to number of frames
+    frame_count++;
     wait(e.triggered);
     in_size = size_in.pop_front();
     out_size = size_out.pop_front();
     if(in_size == out_size) 
       begin : SIZE_MATCHED
-      `uvm_info(get_type_name(),$sformatf("Frame %0d sizes have MATCHED"),UVM_LOW);
+      `uvm_info(get_type_name(),$sformatf("Frame %0d sizes have MATCHED",frame_count),UVM_LOW);
       for(int i = 0; i < in_size; i++) 
         begin
         if(frame_in.pop_front() == frame_out.pop_front()) 
@@ -115,7 +115,7 @@ task xgemac_scoreboard::run_phase(uvm_phase phase);
       end : SIZE_MATCHED
     else 
       begin : SIZE_MISMATCHED
-        `uvm_info(get_type_name(),$sformatf("Frame %0d sizes have MISMATCHED"),UVM_LOW);
+        `uvm_info(get_type_name(),$sformatf("Frame %0d sizes have MISMATCHED",frame_count),UVM_LOW);
       end : SIZE_MISMATCHED
   end
 endtask     

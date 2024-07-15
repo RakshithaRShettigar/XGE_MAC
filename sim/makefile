@@ -1,5 +1,13 @@
 all: clean compile simulate
- 
+
+ifndef test
+override test = xgemac_base_test
+endif
+
+ifndef verbosity
+override verbosity = UVM_MEDIUM
+endif
+
 compile:
 	vlib work;
 	vlog -sv \
@@ -8,9 +16,11 @@ compile:
  
 simulate:
 	vsim \
-	work.tb \
+	work.xgemac_top \
 	-voptargs=+acc=npr \
-	-c -do "log -r /*; run -all;  exit"
+	+UVM_TESTNAME=$(test) \
+	+UVM_VERBOSITY=$(verbosity) \
+	-c -do "log -r /*; run -all;  exit" > mac_sim.log
  
 clean:
-	rm -rf transcript *.vcd *.wlf work/ *.log
+	rm -rf transcript *.vcd *.wlf work/ *.log *.vstf

@@ -21,7 +21,7 @@ class in_agent extends uvm_agent;
 endclass
 
 //class constructor
-    function in_agent::new(string name = "in_agent", uvm_component parent = null);
+    function in_agent::new(string name = "in_agent", uvm_component parent);
   super.new(name, parent);
 endfunction : new
 
@@ -41,6 +41,5 @@ function void in_agent::connect_phase(uvm_phase phase);
   if(get_is_active() == UVM_ACTIVE) 
     in_drv_h.seq_item_port.connect(in_seqr_h.seq_item_export);
 endfunction : connect_phase
-endclass
    
 `endif

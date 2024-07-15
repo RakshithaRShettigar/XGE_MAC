@@ -51,8 +51,8 @@ task in_drv::run_phase(uvm_phase phase);
                             pkt_vif.pkt_tx_val<=1; //Enabling transaction
                             pkt_vif.pkt_tx_eop<=1;
                             pkt_vif.pkt_tx_sop<=0;
-                            pkt_vip.pkt_tx_data <= in_seq_item_h.frame.pop_back();
-                            pkt_vip.pkt_tx_mod <= in_seq_item_h.pkt_tx_mod;
+                            pkt_vif.pkt_tx_data <= in_seq_item_h.frame.pop_back();
+                            pkt_vif.pkt_tx_mod <= in_seq_item_h.pkt_tx_mod;
                         end
                     else
                         begin

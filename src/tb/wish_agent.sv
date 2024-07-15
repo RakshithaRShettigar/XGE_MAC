@@ -9,9 +9,9 @@
 
 class wish_agent extends uvm_agent;
   
-  wish_seqr w_seqr;
-  wish_drv w_drv;
-  wish_mon w_mon;
+  wish_seqr wish_seqr_h;
+  wish_drv wish_drv_h;
+  wish_mon wish_mon_h;
   
   `uvm_component_utils(wish_agent)
   
@@ -22,15 +22,15 @@ class wish_agent extends uvm_agent;
   virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
     if(get_is_active() == UVM_ACTIVE) begin
-      w_seqr = wish_seqr::type_id::create("w_seqr", this);
-      w_drv = wish_drv::type_id::create("w_drv", this);
+      wish_seqr_h = wish_seqr::type_id::create("wish_seqr_h", this);
+      wish_drv_h = wish_drv::type_id::create("wish_drv_h", this);
     end
-    w_mon = wish_mon::type_id::create("w_mon", this);
+    wish_mon_h = wish_mon::type_id::create("wish_mon_h", this);
   endfunction
   
   virtual function void connect_phase(uvm_phase phase);
     if(get_is_active() == UVM_ACTIVE)
-      w_drv.seq_item_port.connect(w_seqr.seq_item_export);
+      wish_drv_h.seq_item_port.connect(wish_seqr_h.seq_item_export);
   endfunction
   
 endclass

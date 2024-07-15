@@ -2,16 +2,19 @@
 
 `ifndef TB_INCLUDED_
 `define TB_INCLUDED_
-
+import uvm_pkg::*;
+`include "uvm_macros.svh"
 `include "wish_intf.sv"
 `include "pkt_interface.sv"
 `include "design_pkg_old.sv"
 `include "xgemac_pkg.sv"
+`include "xgemac_defines.sv"
 
 
 module xgemac_top;
+import xgemac_pkg::*;
 
-   bit wb_clk_i,clk_156m25, reset_156m25_n, wb_rst_i;
+   bit wb_clk_i,clk_156m25;
  
 always #1200 clk_156m25 = ~clk_156m25; // frequency 156.25MHz
 always #5000 wb_clk_i = ~wb_clk_i; // We have considered the Wishbone clock frequency as 100MHz
@@ -23,9 +26,9 @@ always #5000 wb_clk_i = ~wb_clk_i; // We have considered the Wishbone clock freq
     wb_clk_i = 0;
    
   end
-  wish_intf wish_vif(wb_clk_i, wb_rst_i);  
+  wish_intf wish_vif(wb_clk_i);  
                                                        
-  pkt_interface pkt_vif(clk_156m25,reset_156m25_n);                                                                           
+  pkt_interface pkt_vif(clk_156m25);                                                                           
    xge_mac DUV(.wb_int_o(wish_vif.wb_int_o),
                .wb_dat_o(wish_vif.wb_dat_o),
                .wb_ack_o(wish_vif.wb_ack_o),

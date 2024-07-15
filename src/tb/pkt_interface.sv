@@ -24,6 +24,14 @@ interface pkt_interface(input clk_156m25);
     logic [2:0]     pkt_rx_mod;
     logic           pkt_rx_err;
 
+    //RESET DRIVER CLOCKING BLOCK
+    clocking pkt_reset_dr_cb @(posedge clk_156m25);
+    default input #0 output #0;
+
+    //pkt reset
+    output reset_156m25_n;
+    endclocking
+
     //INPUT DRIVER CLOCKING BLOCK
     clocking pkt_in_dr_cb @(posedge clk_156m25);
     default input #0 output #0;
@@ -92,6 +100,9 @@ interface pkt_interface(input clk_156m25);
     input   pkt_rx_mod;
     input   pkt_rx_err;
     endclocking
+
+    //Input Reset Driver modport
+    modport pkt_reset_dr_mp(input clk_156m25,clocking pkt_reset_dr_cb);
 
     //Input Agent Driver modport
     modport pkt_in_dr_mp(input clk_156m25,clocking pkt_in_dr_cb);

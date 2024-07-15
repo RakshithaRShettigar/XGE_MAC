@@ -16,7 +16,7 @@ class xgemac_oversize_vseq extends xgemac_base_vseq;
   // Externally defined Tasks and Functions
   //-------------------------------------------------------
   
-  extern function xgemac_oversize_vseq::new(string name = "xgemac_oversize_vseq");
+  extern function new(string name = "xgemac_oversize_vseq");
   extern task body();
 
 
@@ -36,7 +36,7 @@ endfunction : new
 // Used to creates the handle and starts the sequences
 //  name : xgemac_oversize_vseq
 //--------------------------------------------------------------------------------------------
-   task body();
+   task xgemac_oversize_vseq::body();
     `uvm_info(get_type_name(), "virtual_seq: Inside Body", UVM_LOW);
      in_seq_oversize_h = in_seq_oversize::type_id::create("in_seq_oversize_h");
      

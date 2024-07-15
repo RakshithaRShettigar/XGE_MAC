@@ -16,7 +16,7 @@ class xgemac_normal_vseq extends xgemac_base_vseq;
   // Externally defined Tasks and Functions
   //-------------------------------------------------------
   
-  extern function xgemac_normal_vseq::new(string name = "xgemac_normal_vseq");
+  extern function new(string name = "xgemac_normal_vseq");
   extern task body();
 
 
@@ -36,14 +36,14 @@ endfunction : new
 // Used to creates the handle and starts the sequences
 //  name : xgemac_normal_vseq
 //--------------------------------------------------------------------------------------------
-   task body();
+   task xgemac_normal_vseq::body();
     `uvm_info(get_type_name(), "virtual_seq: Inside Body", UVM_LOW);
      in_seq_normal_h = in_seq_normal::type_id::create("in_seq_normal_h");
      
      fork
       in_seq_normal_h.start(in_seqr_h);
-      wish_seq_h.start(wish_seqr_h);
-      reset_seq_h.start(reset_seqr_h);
+      // wish_seq_h.start(wish_seqr_h);
+      // reset_seq_h.start(reset_seqr_h);
     join
       
    endtask
