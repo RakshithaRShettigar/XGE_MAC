@@ -24,6 +24,10 @@ interface pkt_interface(input clk_156m25);
     logic [2:0]     pkt_rx_mod;
     logic           pkt_rx_err;
 
+    //XGMII SIGNALS
+    logic [7:0]     xgmii_txc;
+    logic [63:0]     xgmii_txd;
+
     //RESET DRIVER CLOCKING BLOCK
     clocking pkt_reset_dr_cb @(posedge clk_156m25);
     default input #0 output #0;
