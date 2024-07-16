@@ -59,19 +59,16 @@ always #5000 wb_clk_i = ~wb_clk_i; // We have considered the Wishbone clock freq
   
 
   initial begin
-   
-    uvm_config_db#(virtual wish_intf)::set(null, "", "wish_vif", wish_vif);
-    
-    uvm_config_db#(virtual pkt_interface)::set(null, "", "pkt_vif", pkt_vif);
 
+    uvm_config_db#(virtual wish_intf)::set(null, "", "wish_vif", wish_vif); 
+    uvm_config_db#(virtual pkt_interface)::set(null, "", "pkt_vif", pkt_vif);
     run_test("xgemac_base_test");
-   
   end
 
- initial begin
-    $dumpfile("dump.vcd"); 
-    $dumpvars;
- end
+//  initial begin
+//     $dumpfile("dump.vcd"); 
+//     $dumpvars;
+//  end
  
 endmodule
  

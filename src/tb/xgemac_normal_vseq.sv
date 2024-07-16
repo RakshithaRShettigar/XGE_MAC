@@ -43,8 +43,8 @@ endfunction : new
      
      fork
       in_seq_normal_h.start(in_seqr_h);
-      // wish_seq_h.start(wish_seqr_h);
-      // reset_seq_h.start(reset_seqr_h);
+      reset_seq_h.start(reset_seqr_h);
+      wish_seq_h.start(wish_seqr_h);
     join
       
    endtask

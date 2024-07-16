@@ -64,7 +64,7 @@ task xgemac_normal_test::run_phase(uvm_phase phase);
   normal_vseq_h.reset_seqr_h = xgemac_env_h.reset_agent_h.reset_seqr_h;
   
   normal_vseq_h.start(null);
-  #100ns;
+  // #100ns;
 
   `uvm_info(get_type_name(), $sformatf("Done xgemac_normal_test"), UVM_NONE);
   phase.drop_objection(this);

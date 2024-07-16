@@ -37,6 +37,7 @@ endfunction : new
 //  name : xgemac_oversize_vseq
 //--------------------------------------------------------------------------------------------
    task xgemac_oversize_vseq::body();
+   super.body();
     `uvm_info(get_type_name(), "virtual_seq: Inside Body", UVM_LOW);
      in_seq_oversize_h = in_seq_oversize::type_id::create("in_seq_oversize_h");
      

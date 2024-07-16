@@ -21,6 +21,7 @@ simulate:
 	+UVM_TESTNAME=$(test) \
 	+UVM_VERBOSITY=$(verbosity) \
 	-c -do "log -r /*; run -all;  exit" > mac_sim.log
+	wlf2vcd -o wave.vcd vsim.wlf
  
 clean:
 	rm -rf transcript *.vcd *.wlf work/ *.log *.vstf
