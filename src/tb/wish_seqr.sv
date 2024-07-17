@@ -21,6 +21,6 @@ class wish_seqr extends uvm_sequencer#(wish_seq_item);
     super.new(name, parent);
   endfunction
   
-endclass
+endclass: wish_seqr
 
 `endif
