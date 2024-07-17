@@ -19,12 +19,11 @@ class xgemac_oversize_vseq extends xgemac_base_vseq;
   extern function new(string name = "xgemac_oversize_vseq");
   extern task body();
 
-
-endclass  
+  endclass: xgemac_oversize_vseq
 
 //--------------------------------------------------------------------------------------------
 // Construct: new
-//  name : xgemac_oversized_vseq
+//  name : xgemac_oversize_vseq
 //--------------------------------------------------------------------------------------------
 
 function xgemac_oversize_vseq::new(string name = "xgemac_oversize_vseq");
@@ -47,6 +46,6 @@ endfunction : new
       reset_seq_h.start(reset_seqr_h);
     join
       
-   endtask
+   endtask: body
     
 `endif
