@@ -5,10 +5,12 @@
 class wish_seq extends uvm_sequence#(wish_seq_item);
   `uvm_object_utils(wish_seq)
   
+ //constructor : new
   function new(string name = "wish_seq");
     super.new(name);
   endfunction
-  
+
+  //task: body
   virtual task body();
     
     //register write
@@ -28,10 +30,7 @@ class wish_seq extends uvm_sequence#(wish_seq_item);
     
     start_item(req);
     assert(req.randomize() with {wb_adr_i == 'h08; wb_we_i==1'h0;}); //interrupt pending register
-      finish_item(req);
-  
-    
-    
+      finish_item(req);  
     
   start_item(req);
     assert(req.randomize() with {wb_adr_i == 'h10; wb_we_i==1'h0;}); //interrupt mask register
@@ -57,9 +56,9 @@ class wish_seq extends uvm_sequence#(wish_seq_item);
     assert(req.randomize() with {wb_adr_i == 'h94; wb_we_i==1'h0;}); //receive packet count register
       finish_item(req);
     
-  endtask
+  endtask: body
   
-endclass
+endclass: wish_seq
 
 `endif
   
