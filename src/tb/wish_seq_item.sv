@@ -30,9 +30,9 @@ class wish_seq_item extends uvm_sequence_item;
  //class constructor
   function new(string name = "wish_seq_item");
     super.new(name);
-  endfunction
+  endfunction: new
  
 
-endclass
+endclass: wish_seq_item
 
 `endif
