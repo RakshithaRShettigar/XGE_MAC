@@ -60,6 +60,6 @@ class wish_agent extends uvm_agent;
       wish_drv_h.seq_item_port.connect(wish_seqr_h.seq_item_export);
   endfunction: connect_phase
   
-endclass: connect_phase
+endclass: wish_agent
     
 `endif    
