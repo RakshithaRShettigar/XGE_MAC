@@ -1,29 +1,21 @@
 `ifndef WISH_INTF_INCLUDED_
 `define WISH_INTF_INCLUDED_
 
-interface wish_intf(input wb_clk_i); 
-  //wishbone input signals
+interface wish_intf(input wb_clk_i);
+  logic wb_rst_i; 
+  //inputs
   logic [7:0]wb_adr_i;
   logic wb_cyc_i;
   logic [31:0]wb_dat_i;
   logic wb_stb_i;
   logic wb_we_i;
   
-  //wishbone output signals
+  //outputs
   logic wb_ack_o;
   logic[31:0]wb_dat_o;
   logic wb_int_o;
-
-  //wishbone reset signal
-  logic wb_rst_i;
-
-  //wishbone reset driver clocking block
-  clocking wish_reset_d_cb @(posedge wb_clk_i);
-    default input #0 output #0;
-    output wb_rst_i;
-  endclocking
   
-  //wishbone driver clocking block
+  
   clocking wish_d_cb @(posedge wb_clk_i);
     default input #0 output #0;
     
@@ -39,7 +31,14 @@ interface wish_intf(input wb_clk_i);
      
   endclocking
 
-  //wishbone monitor clocking block
+  //RESET DRIVER CLOCKING BLOCK
+  clocking wish_reset_dr_cb @(posedge wb_clk_i);
+    default input #0 output #0;
+    
+    //WISH RESET
+    output  wb_rst_i;
+  endclocking
+  
   clocking wish_m_cb @(posedge wb_clk_i);
     default input #0 output #0;
     
@@ -53,16 +52,11 @@ interface wish_intf(input wb_clk_i);
     input wb_int_o;
      
   endclocking
-
-  //wishbone reset driver modport
-  modport wish_reset_d_mp (input wb_clk_i, wb_rst_i, clocking wish_reset_d_cb);
-
-  //wishbone driver modport  
-  modport wish_d_mp (input wb_clk_i, wb_rst_i, clocking wish_d_cb);
-
-  //wishbone monitor modport  
-  modport wish_m_mp (input wb_clk_i, wb_rst_i, clocking wish_m_cb);
   
-endinterface: wish_intf
+  modport wish_d_mp (input wb_clk_i, clocking wish_d_cb);
+  modport wish_reset_dr_mp (input wb_clk_i, clocking wish_reset_dr_cb);
+  modport wish_m_mp (input wb_clk_i, clocking wish_m_cb);
+  
+endinterface
     
 `endif

@@ -19,11 +19,12 @@ class xgemac_oversize_vseq extends xgemac_base_vseq;
   extern function new(string name = "xgemac_oversize_vseq");
   extern task body();
 
-  endclass: xgemac_oversize_vseq
+
+endclass  
 
 //--------------------------------------------------------------------------------------------
 // Construct: new
-//  name : xgemac_oversize_vseq
+//  name : xgemac_oversized_vseq
 //--------------------------------------------------------------------------------------------
 
 function xgemac_oversize_vseq::new(string name = "xgemac_oversize_vseq");
@@ -36,7 +37,6 @@ endfunction : new
 //  name : xgemac_oversize_vseq
 //--------------------------------------------------------------------------------------------
    task xgemac_oversize_vseq::body();
-   super.body();
     `uvm_info(get_type_name(), "virtual_seq: Inside Body", UVM_LOW);
      in_seq_oversize_h = in_seq_oversize::type_id::create("in_seq_oversize_h");
      
@@ -46,6 +46,6 @@ endfunction : new
       reset_seq_h.start(reset_seqr_h);
     join
       
-   endtask: body
+   endtask
     
 `endif

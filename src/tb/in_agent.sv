@@ -41,5 +41,6 @@ function void in_agent::connect_phase(uvm_phase phase);
   if(get_is_active() == UVM_ACTIVE) 
     in_drv_h.seq_item_port.connect(in_seqr_h.seq_item_export);
 endfunction : connect_phase
+
    
 `endif

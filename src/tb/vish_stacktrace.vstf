@@ -1,0 +1,109 @@
+# Current time Sat Jul 13 14:14:33 2024
+# Program = vish
+# Id = "10.6c"
+# Version = "2017.07"
+# Date = "Jul 25 2017"
+# Platform = linux
+# 0    0xf7fd9430: '<unknown (@0xf7fd9430)>'
+# 1    0xf7fd940b: '<unknown (@0xf7fd940b)>'
+# 2    0x0924d043: '<unknown (@0x924d043)>'
+# 3    0xf7d9b54b: '<unknown (@0xf7d9b54b)>'
+# 4    0xf7d9b4f3: '<unknown (@0xf7d9b4f3)>'
+# 5    0x09beadeb: '<unknown (@0x9beadeb)>'
+# 6    0x000000a4: '<unknown (@0xa4)>'
+# 7    0x73696e5a: '<unknown (@0x73696e5a)>'
+# Current time Sat Jul 13 20:08:14 2024
+# Program = vish
+# Id = "10.6c"
+# Version = "2017.07"
+# Date = "Jul 25 2017"
+# Platform = linux
+# 0    0xf7fd9430: '<unknown (@0xf7fd9430)>'
+# 1    0xf7fd940b: '<unknown (@0xf7fd940b)>'
+# 2    0x09244f7b: '<unknown (@0x9244f7b)>'
+# 3    0xf7d9b54b: '<unknown (@0xf7d9b54b)>'
+# 4    0xf7d9b4f3: '<unknown (@0xf7d9b4f3)>'
+# 5    0xf7d9b4eb: '<unknown (@0xf7d9b4eb)>'
+# 6    0xf7d9b4e3: '<unknown (@0xf7d9b4e3)>'
+# 7    0xf7d9b4db: '<unknown (@0xf7d9b4db)>'
+# 8    0xf7d9b4d3: '<unknown (@0xf7d9b4d3)>'
+# 9    0xf7d9b4cb: '<unknown (@0xf7d9b4cb)>'
+# 10   0xf7d9b4c3: '<unknown (@0xf7d9b4c3)>'
+# 11   0xf7d9b4bb: '<unknown (@0xf7d9b4bb)>'
+# 12   0xf7d9b4b3: '<unknown (@0xf7d9b4b3)>'
+# 13   0xf7d9b4ab: '<unknown (@0xf7d9b4ab)>'
+# 14   0xf7d9b4a3: '<unknown (@0xf7d9b4a3)>'
+# 15   0xf7d9b49b: '<unknown (@0xf7d9b49b)>'
+# 16   0xf7d9b493: '<unknown (@0xf7d9b493)>'
+# 17   0xf7d9b48b: '<unknown (@0xf7d9b48b)>'
+# 18   0xf7d9b483: '<unknown (@0xf7d9b483)>'
+# 19   0xf7d9b47b: '<unknown (@0xf7d9b47b)>'
+# 20   0xf7d9b473: '<unknown (@0xf7d9b473)>'
+# 21   0xf7d9b46b: '<unknown (@0xf7d9b46b)>'
+# 22   0xf7d9b463: '<unknown (@0xf7d9b463)>'
+# 23   0x09bdbf73: '<unknown (@0x9bdbf73)>'
+# 24   0x00000014: '<unknown (@0x14)>'
+# End of Stack Trace
+
+# Current time Sat Jul 13 20:09:09 2024
+# Program = vish
+# Id = "10.6c"
+# Version = "2017.07"
+# Date = "Jul 25 2017"
+# Platform = linux
+# 0    0xf7fd9430: '<unknown (@0xf7fd9430)>'
+# 1    0xf7fd940b: '<unknown (@0xf7fd940b)>'
+# 2    0x091f2f33: '<unknown (@0x91f2f33)>'
+# 3    0xf7d9b563: '<unknown (@0xf7d9b563)>'
+# 4    0xf7d9b4f3: '<unknown (@0xf7d9b4f3)>'
+# 5    0x09bea5fb: '<unknown (@0x9bea5fb)>'
+# 6    0x000000a4: '<unknown (@0xa4)>'
+# Current time Sat Jul 13 20:09:23 2024
+# Program = vish
+# Id = "10.6c"
+# Version = "2017.07"
+# Date = "Jul 25 2017"
+# Platform = linux
+# 0    0xf7fd9430: '<unknown (@0xf7fd9430)>'
+# 1    0xf7fd940b: '<unknown (@0xf7fd940b)>'
+# 2    0x0924d043: '<unknown (@0x924d043)>'
+# 3    0xf7d9b54b: '<unknown (@0xf7d9b54b)>'
+# 4    0xf7d9b4f3: '<unknown (@0xf7d9b4f3)>'
+# 5    0x09ad6a33: '<unknown (@0x9ad6a33)>'
+# 6    0x000000a4: '<unknown (@0xa4)>'
+# End of Stack Trace
+
+# Current time Mon Jul 15 10:31:26 2024
+# Program = vish
+# Id = "10.6c"
+# Version = "2017.07"
+# Date = "Jul 25 2017"
+# Platform = linux
+# 0    0xf7fd9430: '<unknown (@0xf7fd9430)>'
+# 1    0xf7fd940b: '<unknown (@0xf7fd940b)>'
+# 2    0x092468bb: '<unknown (@0x92468bb)>'
+# 3    0xf7d9b64b: '<unknown (@0xf7d9b64b)>'
+# 4    0xf7d9b5f3: '<unknown (@0xf7d9b5f3)>'
+# 5    0xf7d9b5eb: '<unknown (@0xf7d9b5eb)>'
+# 6    0xf7d9b5e3: '<unknown (@0xf7d9b5e3)>'
+# 7    0xf7d9b5db: '<unknown (@0xf7d9b5db)>'
+# 8    0xf7d9b5d3: '<unknown (@0xf7d9b5d3)>'
+# 9    0xf7d9b5cb: '<unknown (@0xf7d9b5cb)>'
+# 10   0xf7d9b5c3: '<unknown (@0xf7d9b5c3)>'
+# 11   0xf7d9b5bb: '<unknown (@0xf7d9b5bb)>'
+# 12   0xf7d9b5b3: '<unknown (@0xf7d9b5b3)>'
+# 13   0xf7d9b5ab: '<unknown (@0xf7d9b5ab)>'
+# 14   0xf7d9b5a3: '<unknown (@0xf7d9b5a3)>'
+# 15   0xf7d9b59b: '<unknown (@0xf7d9b59b)>'
+# 16   0xf7d9b593: '<unknown (@0xf7d9b593)>'
+# 17   0xf7d9b58b: '<unknown (@0xf7d9b58b)>'
+# 18   0xf7d9b583: '<unknown (@0xf7d9b583)>'
+# 19   0xf7d9b57b: '<unknown (@0xf7d9b57b)>'
+# 20   0xf7d9b573: '<unknown (@0xf7d9b573)>'
+# 21   0xf7d9b56b: '<unknown (@0xf7d9b56b)>'
+# 22   0xf7d9b563: '<unknown (@0xf7d9b563)>'
+# 23   0xf7d9b55b: '<unknown (@0xf7d9b55b)>'
+# 24   0x09adaedb: '<unknown (@0x9adaedb)>'
+# 25   0x0000010c: '<unknown (@0x10c)>'
+# End of Stack Trace
+

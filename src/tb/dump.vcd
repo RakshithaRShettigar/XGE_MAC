@@ -1,0 +1,1283 @@
+$date
+	Tue Jul 16 11:42:13 2024
+$end
+$version
+	QuestaSim Version 10.6c
+$end
+$timescale
+	1ps
+$end
+
+$scope module uvm_root $end
+$upscope $end
+
+$scope module xgemac_top $end
+
+$scope module DUV $end
+
+$scope module rx_eq0 $end
+
+$scope function nextCRC32_D64 $end
+$upscope $end
+
+$scope function nextCRC32_D8 $end
+$upscope $end
+$upscope $end
+
+$scope module rx_data_fifo0 $end
+
+$scope module fifo0 $end
+
+$scope begin genblk2 $end
+
+$scope module mem0 $end
+
+$scope begin genblk3 $end
+$upscope $end
+
+$scope begin genblk2 $end
+$upscope $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin genblk1 $end
+$upscope $end
+
+$scope module ctrl0 $end
+
+$scope begin genblk2 $end
+$upscope $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope module rx_hold_fifo0 $end
+
+$scope module fifo0 $end
+
+$scope begin genblk2 $end
+$upscope $end
+
+$scope begin genblk1 $end
+
+$scope module mem0 $end
+
+$scope begin genblk3 $end
+$upscope $end
+
+$scope begin genblk2 $end
+$upscope $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope module ctrl0 $end
+
+$scope begin genblk2 $end
+$upscope $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope module tx_dq0 $end
+
+$scope function nextCRC32_D64 $end
+$upscope $end
+
+$scope function nextCRC32_D8 $end
+$upscope $end
+$upscope $end
+
+$scope module tx_data_fifo0 $end
+
+$scope module fifo0 $end
+
+$scope begin genblk2 $end
+
+$scope module mem0 $end
+
+$scope begin genblk3 $end
+$upscope $end
+
+$scope begin genblk2 $end
+$upscope $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin genblk1 $end
+$upscope $end
+
+$scope module ctrl0 $end
+
+$scope begin genblk2 $end
+$upscope $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope module tx_hold_fifo0 $end
+
+$scope module fifo0 $end
+
+$scope begin genblk2 $end
+$upscope $end
+
+$scope begin genblk1 $end
+
+$scope module mem0 $end
+
+$scope begin genblk3 $end
+$upscope $end
+
+$scope begin genblk2 $end
+$upscope $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope module ctrl0 $end
+
+$scope begin genblk2 $end
+$upscope $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope module sync_clk_wb0 $end
+
+$scope module meta_sync0 $end
+
+$scope begin meta[6] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin meta[5] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin meta[4] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin meta[3] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin meta[2] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin meta[1] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin meta[0] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope module meta_sync1 $end
+
+$scope begin meta[1] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin meta[0] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope module sync_clk_xgmii_tx0 $end
+
+$scope module meta_sync0 $end
+
+$scope begin meta[2] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin meta[1] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin meta[0] $end
+
+$scope module meta_sync_single0 $end
+
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope begin uvm_pkg $end
+$var parameter 32 ! UVM_HDL_MAX_WIDTH $end
+$var parameter 32 " UVM_STREAMBITS $end
+$var parameter 32 # UVM_RADIX $end
+$var parameter 32 $ UVM_MACRO_NUMFLAGS $end
+$var parameter 32 % UVM_DEFAULT $end
+$var parameter 32 & UVM_ALL_ON $end
+$var parameter 32 ' UVM_FLAGS_ON $end
+$var parameter 32 ( UVM_FLAGS_OFF $end
+$var parameter 32 ) UVM_COPY $end
+$var parameter 32 * UVM_NOCOPY $end
+$var parameter 32 + UVM_COMPARE $end
+$var parameter 32 , UVM_NOCOMPARE $end
+$var parameter 32 - UVM_PRINT $end
+$var parameter 32 . UVM_NOPRINT $end
+$var parameter 32 / UVM_RECORD $end
+$var parameter 32 0 UVM_NORECORD $end
+$var parameter 32 1 UVM_PACK $end
+$var parameter 32 2 UVM_NOPACK $end
+$var parameter 32 3 UVM_PHYSICAL $end
+$var parameter 32 4 UVM_ABSTRACT $end
+$var parameter 32 5 UVM_READONLY $end
+$var parameter 32 6 UVM_NODEFPRINT $end
+$var parameter 32 7 UVM_MACRO_EXTRAS $end
+$var parameter 32 8 UVM_FLAGS $end
+$var parameter 32 9 UVM_UNPACK $end
+$var parameter 32 : UVM_CHECK_FIELDS $end
+$var parameter 32 ; UVM_END_DATA_EXTRA $end
+$var parameter 32 < UVM_START_FUNCS $end
+$var parameter 32 = UVM_SET $end
+$var parameter 32 > UVM_SETINT $end
+$var parameter 32 ? UVM_SETOBJ $end
+$var parameter 32 @ UVM_SETSTR $end
+$var parameter 32 A UVM_END_FUNCS $end
+$var parameter 32 B UVM_STR_CRC_POLYNOMIAL $end
+$var parameter 32 C UVM_STDOUT $end
+$var parameter 32 D UVM_LINE_WIDTH $end
+$var parameter 32 E UVM_NUM_LINES $end
+$var parameter 32 F UVM_SMALL_STRING $end
+$var parameter 32 G UVM_LARGE_STRING $end
+$var reg 1 H uvm_start_uvm_declarations $end
+$var integer 32 I uvm_global_random_seed $end
+$var integer 32 J UVM_UNBOUNDED_CONNECTIONS $end
+
+$scope function uvm_hdl_check_path $end
+$var integer 32 K uvm_hdl_check_path $end
+$upscope $end
+
+$scope function uvm_hdl_deposit $end
+$var integer 32 L uvm_hdl_deposit $end
+$var reg 1024 M value [1023:0] $end
+$upscope $end
+
+$scope function uvm_hdl_force $end
+$var integer 32 N uvm_hdl_force $end
+$var reg 1024 O value [1023:0] $end
+$upscope $end
+
+$scope task uvm_hdl_force_time $end
+$var reg 1024 P value [1023:0] $end
+$var time 64 Q force_time $end
+$upscope $end
+
+$scope function uvm_hdl_release_and_read $end
+$var integer 32 R uvm_hdl_release_and_read $end
+$var reg 1024 S value [1023:0] $end
+$upscope $end
+
+$scope function uvm_hdl_release $end
+$var integer 32 T uvm_hdl_release $end
+$upscope $end
+
+$scope function uvm_hdl_read $end
+$var integer 32 U uvm_hdl_read $end
+$var reg 1024 V value [1023:0] $end
+$upscope $end
+
+$scope function uvm_dpi_get_next_arg_c $end
+$upscope $end
+
+$scope function uvm_dpi_get_tool_name_c $end
+$upscope $end
+
+$scope function uvm_dpi_get_tool_version_c $end
+$upscope $end
+
+$scope function uvm_dpi_get_next_arg $end
+$upscope $end
+
+$scope function uvm_dpi_get_tool_name $end
+$upscope $end
+
+$scope function uvm_dpi_get_tool_version $end
+$upscope $end
+
+$scope function uvm_dpi_regcomp $end
+$upscope $end
+
+$scope function uvm_dpi_regexec $end
+$var integer 32 W uvm_dpi_regexec $end
+$upscope $end
+
+$scope function uvm_dpi_regfree $end
+$upscope $end
+
+$scope function uvm_re_match $end
+$var integer 32 X uvm_re_match $end
+$upscope $end
+
+$scope function uvm_dump_re_cache $end
+$upscope $end
+
+$scope function uvm_glob_to_re $end
+$upscope $end
+
+$scope function uvm_revision_string $end
+$upscope $end
+
+$scope function uvm_radix_to_string $end
+$var integer 32 Y radix $end
+$upscope $end
+
+$scope function uvm_instance_scope $end
+$var reg 8 Z c [7:0] $end
+$var integer 32 [ pos $end
+$upscope $end
+
+$scope function uvm_oneway_hash $end
+$var integer 32 \ uvm_oneway_hash $end
+$var integer 32 ] seed $end
+$var reg 1 ^ msb $end
+$var reg 8 _ current_byte [7:0] $end
+$var reg 32 ` crc1 [31:0] $end
+$upscope $end
+
+$scope function uvm_create_random_seed $end
+$var integer 32 a uvm_create_random_seed $end
+$upscope $end
+
+$scope function uvm_object_value_str $end
+$upscope $end
+
+$scope function uvm_leaf_scope $end
+$var reg 8 b scope_separator [7:0] $end
+$var reg 8 c bracket_match [7:0] $end
+$var integer 32 d pos $end
+$var integer 32 e bmatches $end
+$upscope $end
+
+$scope function uvm_vector_to_string $end
+$var reg 4096 f value [4095:0] $end
+$var integer 32 g size $end
+$var integer 32 h radix $end
+$upscope $end
+
+$scope function uvm_get_array_index_int $end
+$var integer 32 i uvm_get_array_index_int $end
+$var reg 1 j is_wildcard $end
+$var integer 32 k i $end
+$upscope $end
+
+$scope function uvm_get_array_index_string $end
+$var reg 1 l is_wildcard $end
+$var integer 32 m i $end
+$upscope $end
+
+$scope function uvm_is_array $end
+$var reg 1 n uvm_is_array $end
+$upscope $end
+
+$scope function uvm_has_wildcard $end
+$upscope $end
+
+$scope task run_test $end
+$upscope $end
+
+$scope function global_stop_request $end
+$upscope $end
+
+$scope function set_global_timeout $end
+$var time 64 o timeout $end
+$var reg 1 p overridable $end
+$upscope $end
+
+$scope function set_global_stop_timeout $end
+$var time 64 q timeout $end
+$upscope $end
+
+$scope function uvm_report_enabled $end
+$var reg 1 r uvm_report_enabled $end
+$var integer 32 s verbosity $end
+$var reg 2 t severity [1:0] $end
+$upscope $end
+
+$scope function uvm_report $end
+$var reg 2 u severity [1:0] $end
+$var integer 32 v verbosity $end
+$var integer 32 w line $end
+$upscope $end
+
+$scope function uvm_report_info $end
+$var integer 32 x verbosity $end
+$var integer 32 y line $end
+$upscope $end
+
+$scope function uvm_report_warning $end
+$var integer 32 z verbosity $end
+$var integer 32 { line $end
+$upscope $end
+
+$scope function uvm_report_error $end
+$var integer 32 | verbosity $end
+$var integer 32 } line $end
+$upscope $end
+
+$scope function uvm_report_fatal $end
+$var integer 32 ~ verbosity $end
+$var integer 32 !! line $end
+$upscope $end
+
+$scope function uvm_string_to_severity $end
+$var reg 1 "! uvm_string_to_severity $end
+$var reg 2 #! sev [1:0] $end
+$upscope $end
+
+$scope function uvm_string_to_action $end
+$upscope $end
+
+$scope function set_config_int $end
+$var reg 4096 $! value [4095:0] $end
+$upscope $end
+
+$scope function set_config_object $end
+$var reg 1 %! clone $end
+$upscope $end
+
+$scope function set_config_string $end
+$upscope $end
+
+$scope function uvm_is_match $end
+$var reg 1 &! uvm_is_match $end
+$upscope $end
+
+$scope function uvm_string_to_bits $end
+$var reg 115200 '! uvm_string_to_bits [115199:0] $end
+$upscope $end
+
+$scope function uvm_bits_to_string $end
+$var reg 115200 (! str [115199:0] $end
+$upscope $end
+
+$scope task uvm_wait_for_nba_region $end
+$var integer 32 )! nba $end
+$var integer 32 *! next_nba $end
+$upscope $end
+
+$scope function uvm_split_string $end
+$upscope $end
+
+$scope function uvm_hdl_concat2string $end
+$upscope $end
+$upscope $end
+
+$scope begin xgemac_pkg $end
+$upscope $end
+
+$scope begin xgemac_top_sv_unit $end
+$upscope $end
+
+$scope begin std $end
+$upscope $end
+
+$scope begin questa_uvm_pkg $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0l
+0n
+0"!
+b0 #!
+bx '!
+bx (!
+bx M
+bx O
+bx P
+bx S
+bx V
+1H
+1^
+b1110001 _
+b10111010110111000000000101111111 `
+bx f
+0j
+0p
+0r
+b0 t
+b0 u
+bx $!
+0%!
+0&!
+b10000000000 !
+b1000000000000 "
+b1111000000000000000000000000 #
+b10001 $
+b10101010101 %
+b101010101 &
+b101010101 '
+b0 (
+b1 )
+b10 *
+b100 +
+b1000 ,
+b10000 -
+b100000 .
+b1000000 /
+b10000000 0
+b100000000 1
+b1000000000 2
+b10000000000000 3
+b100000000000000 4
+b1000000000000000 5
+b10000000000000000 6
+b100000000000000000 7
+b100000000000000001 8
+b100000000000000010 9
+b100000000000000011 :
+b100000000000000100 ;
+b100000000000000101 <
+b100000000000000110 =
+b100000000000000110 >
+b100000000000000111 ?
+b100000000000001000 @
+b100000000000001000 A
+b100110000010001110110110110 B
+b1 C
+b1111000 D
+b1111000 E
+b1110111111 F
+b11100000111111111 G
+b0 Y
+b0 b
+b0 c
+b0 d
+b0 e
+b0 m
+b0 K
+b0 L
+b0 N
+b0 R
+b0 T
+b0 U
+b1 W
+b0 X
+b1101001011000001111100000011110 I
+b101110 Z
+b111 [
+b11101010010111110001101101100011 \
+b1101001011000001111100000011110 ]
+b10111010100111100000011110001000 a
+b0 g
+b0 h
+b0 i
+b0 k
+b111110100 s
+b0 v
+b0 w
+b11001000 x
+b11011001 y
+b0 z
+b0 {
+b0 |
+b0 }
+b0 ~
+b0 !!
+b100101 )!
+b100101 *!
+b11111111111111111111111111111111 J
+bx Q
+bx o
+bx q
+$end
+#1200
+b100110 *!
+b100110 )!
+#5000
+b100111 *!
+b100111 )!
+b1000100110001100001101010111001 a
+#15000
+b101000 *!
+b101001 *!
+b101110 b
+b10 d
+b1 d
+b0 d
+b0 f
+b1 g
+b111000000000000000000000000 h
+b10001 d
+b10000 d
+b1111 d
+b1110 d
+b1101 d
+b1100 d
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b1 f
+b0 e
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b0 f
+b1000000 g
+b1001000000000000000000000000 h
+b0 e
+b1101 d
+b1100 d
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b11101010011000 f
+b0 e
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b10 f
+b100000 g
+b10000000000000000000000000 h
+b0 e
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b0 e
+b11001 d
+b11000 d
+b10111 d
+b10110 d
+b10101 d
+b10100 d
+b10011 d
+b10010 d
+b10001 d
+b10000 d
+b1111 d
+b1110 d
+b1101 d
+b1100 d
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b0 e
+b11110 d
+b11101 d
+b11100 d
+b11011 d
+b11010 d
+b11001 d
+b11000 d
+b10111 d
+b10110 d
+b10101 d
+b10100 d
+b10011 d
+b10010 d
+b10001 d
+b10000 d
+b1111 d
+b1110 d
+b1101 d
+b1100 d
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b0 e
+b1100 d
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b11101010010111110001101101100100 a
+b101000 )!
+b101001 )!
+b1000100110001100001101010111011 a
+#25000
+b101010 *!
+b101010 )!
+b1000100110001100001101010111110 a
+#35000
+b101011 *!
+b101100 *!
+b0 e
+b10 d
+b1 d
+b0 d
+b1 f
+b1 g
+b111000000000000000000000000 h
+b10001 d
+b10000 d
+b1111 d
+b1110 d
+b1101 d
+b1100 d
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b0 f
+b0 e
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b11101010011000 f
+b1000000 g
+b1001000000000000000000000000 h
+b0 e
+b1101 d
+b1100 d
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b1000100010111000 f
+b0 e
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b10 f
+b100000 g
+b10000000000000000000000000 h
+b0 e
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b0 e
+b11001 d
+b11000 d
+b10111 d
+b10110 d
+b10101 d
+b10100 d
+b10011 d
+b10010 d
+b10001 d
+b10000 d
+b1111 d
+b1110 d
+b1101 d
+b1100 d
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b0 e
+b11110 d
+b11101 d
+b11100 d
+b11011 d
+b11010 d
+b11001 d
+b11000 d
+b10111 d
+b10110 d
+b10101 d
+b10100 d
+b10011 d
+b10010 d
+b10001 d
+b10000 d
+b1111 d
+b1110 d
+b1101 d
+b1100 d
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b0 e
+b1100 d
+b1011 d
+b1010 d
+b1001 d
+b1000 d
+b111 d
+b110 d
+b101 d
+b100 d
+b11 d
+b11111111111111111111111111111111 e
+b101011 )!
+b101100 )!
+b1000100110001100001101011000010 a
+#45000
+b101101 *!
+b101101 )!
+b1000100110001100001101011000111 a
+#55000
+b101110 *!
+b101110 )!
+b1000100110001100001101011001101 a
+#65000
+b101111 *!
+b101111 )!
+b1000100110001100001101011010100 a
+#75000
+b110000 *!
+b110000 )!
+b1000100110001100001101011011100 a
+#85000
+b110001 *!
+b110001 )!
+b1000100110001100001101011100101 a
+#95000
+b110010 *!
+b110010 )!
+b110011 *!
+b110100 *!
+b110011 )!
+b110100 )!
+b110101 *!
+b110110 *!
+b110101 )!
+b110110 )!
+b10111010100111100000011110011010 a
+b1000110010011101011001010100101 a
+b100110001111100000100011010101 a
+b11110001000101110010011101010110 a
+b11111011000100110011110101111010 a
+b1010011000011001001111101111100 a
+b10010001101101010101011000011110 a
+b10100011010011110000011001000001 a
+b11111110100111111001111001010011 a
+b11000111010010110110001111000111 a
+b10010001011001010011100101011001 a
+b10001100100001111100100001000100 a
+b10001001111010001111100000010101 a
+b11011101101001110111110010110010 a
+b10010000000101001011101001111010 a
+b111111011000100110001000100011 a
+b11000011101101010101000100100101 a
+b1000101110000110010111011001011 a
+b10000011010000100000011100110 a
+b1100000011111000110001010000 a
+b10011100001011011110000001101101 a
+b10111111000011110100110000011 a
+b10100111111010111100100101100 a
+b1000111101001001110110101101101 a
+b101001110000100001011001111101 a
+b11101000101011010101011100101111 a
+b1100111010111110101111111111001 a
+b1111101010011001001001001100010 a
+b11110100011001010111010000110111 a
+b11011000110001001111011000100011 a
+b101100111011011010111010000001 a
+b1101010011000000101101001010000 a
+b100110101000010000100100000110 a
+b11010101111001011001001100010101 a
+b10101101000100100010100000101 a
+b11001101100100111001101100000 a
+b10110001110010001010111011100101 a
+b1101000001010101111001100111111 a
+b10110101001101001101011000101111 a
+b1101100111110111110001100000000 a
+b10011110100000000111000110101100 a
+b11010010010010110000100111011110 a
+b10111011100011101101010011001011 a
+b1000001000011110010101110000101 a
+b1110001101000011111111101110100 a
+b10011001000100001011011010100000 a
+b10101011110110111011001001100 a
+b11100001111010100001100000010010 a
+b10011100111110101111010010001101 a
+b101111010001001110000001011111 a
+b10000110001000011110010001101100 a
+b10110100111110011010011001100101 a
+b11001011011011010100011011101111 a
+b111011011111100101001110101101 a
+b111011000011011111100011011001 a
+b11101000010011110011101101011110 a
+b100011001110000011010000 a
+b1001000001001100010101101001001 a
+b1011000011000000110001010011011 a
+b10001100111101110001101110001010 a
+b11111001100101001100010100100000 a
+b11111111100100010110100111011111 a
+b10010000011100011000100010110111 a
+b11100111101001011000001011101000 a
+b10011100101001010010000110110000 a
+b10111101000100000001010100000101 a
+b111000011000110011100110101111 a
+b11011100000111001000010000111110 a
+b10111010100111100000011110101101 a
+b1000110010011101011001010111000 a
+b100110001111100000100011101000 a
+b11110001000101110010011101101001 a
+b11111011000100110011110110001101 a
+b1010011000011001001111110001111 a
+b10010001101101010101011000110001 a
+b10100011010011110000011001010100 a
+b11111110100111111001111001100110 a
+b11000111010010110110001111011010 a
+b10010001011001010011100101101100 a
+b10001100100001111100100001010111 a
+b10001001111010001111100000101000 a
+b11011101101001110111110011000101 a
+b10010000000101001011101010001101 a
+b111111011000100110001000110110 a
+b11000011101101010101000100111000 a
+b1000101110000110010111011011110 a
+b10000011010000100000011111001 a
+b1100000011111000110001100011 a
+b10011100001011011110000010000000 a
+b10111111000011110100110010110 a
+b10100111111010111100100111111 a
+b1000111101001001110110110000000 a
+b101001110000100001011010010000 a
+b11101000101011010101011101000010 a
+b1100111010111110110000000001100 a
+b1111101010011001001001001110101 a
+b11110100011001010111010001001010 a
+b11011000110001001111011000110110 a
+b101100111011011010111010010100 a
+b1101010011000000101101001100011 a
+b100110101000010000100100011001 a
+b11010101111001011001001100101000 a
+b10101101000100100010100011000 a
+b11001101100100111001101110011 a
+b10110001110010001010111011111000 a
+b1101000001010101111001101010010 a
+b10110101001101001101011001000010 a
+b1101100111110111110001100010011 a
+b10011110100000000111000110111111 a
+b11010010010010110000100111110001 a
+b10111011100011101101010011011110 a
+b1000001000011110010101110011000 a
+b1110001101000011111111110000111 a
+b10011001000100001011011010110011 a
+b10101011110110111011001011111 a
+b11100001111010100001100000100101 a
+b10011100111110101111010010100000 a
+b101111010001001110000001110010 a
+b10000110001000011110010001111111 a
+b10110100111110011010011001111000 a
+b11001011011011010100011100000010 a
+b111011011111100101001111000000 a
+b111011000011011111100011101100 a
+b11101000010011110011101101110001 a
+b100011001110000011100011 a
+b1001000001001100010101101011100 a
+b1011000011000000110001010101110 a
+b10001100111101110001101110011101 a
+b11111001100101001100010100110011 a
+b11111111100100010110100111110010 a
+b10010000011100011000100011001010 a
+b11100111101001011000001011111011 a
+b10011100101001010010000111000011 a
+b10111101000100000001010100011000 a
+b111000011000110011100111000010 a
+b11011100000111001000010001010001 a
+b10111010100111100000011111000001 a
+b1000110010011101011001011001100 a
+b100110001111100000100011111100 a
+b11110001000101110010011101111101 a
+b11111011000100110011110110100001 a
+b1010011000011001001111110100011 a
+b10010001101101010101011001000101 a
+b10100011010011110000011001101000 a
+b11111110100111111001111001111010 a
+b11000111010010110110001111101110 a
+b10010001011001010011100110000000 a
+b10001100100001111100100001101011 a
+b10001001111010001111100000111100 a
+b11011101101001110111110011011001 a
+b10010000000101001011101010100001 a
+b111111011000100110001001001010 a
+b11000011101101010101000101001100 a
+b1000101110000110010111011110010 a
+b10000011010000100000100001101 a
+b1100000011111000110001110111 a
+b10011100001011011110000010010100 a
+b10111111000011110100110101010 a
+b10100111111010111100101010011 a
+b1000111101001001110110110010100 a
+b101001110000100001011010100100 a
+b11101000101011010101011101010110 a
+b1100111010111110110000000100000 a
+b1111101010011001001001010001001 a
+b11110100011001010111010001011110 a
+b11011000110001001111011001001010 a
+b101100111011011010111010101000 a
+b1101010011000000101101001110111 a
+b100110101000010000100100101101 a
+b11010101111001011001001100111100 a
+b10101101000100100010100101100 a
+b11001101100100111001110000111 a
+b10110001110010001010111100001100 a
+b1101000001010101111001101100110 a
+b10110101001101001101011001010110 a
+b1101100111110111110001100100111 a
+b10011110100000000111000111010011 a
+b11010010010010110000101000000101 a
+b10111011100011101101010011110010 a
+b1000001000011110010101110101100 a
+b1110001101000011111111110011011 a
+b10011001000100001011011011000111 a
+b10101011110110111011001110011 a
+b11100001111010100001100000111001 a
+b10011100111110101111010010110100 a
+b101111010001001110000010000110 a
+b10000110001000011110010010010011 a
+b10110100111110011010011010001100 a
+b11001011011011010100011100010110 a
+b111011011111100101001111010100 a
+b111011000011011111100100000000 a
+b11101000010011110011101110000101 a
+b100011001110000011110111 a
+b1001000001001100010101101110000 a
+b1011000011000000110001011000010 a
+b10001100111101110001101110110001 a
+b11111001100101001100010101000111 a
+b11111111100100010110101000000110 a
+b10010000011100011000100011011110 a
+b11100111101001011000001100001111 a
+b10011100101001010010000111010111 a
+b10111101000100000001010100101100 a
+b111000011000110011100111010110 a
+b11011100000111001000010001100101 a
+b11011100000111001000010001111010 a
+b111000011000110011100111101011 a
+b10111101000100000001010101000001 a
+b11110001000101110010011110010010 a
+b10111010100111100000011111010110 a
+b1000110010011101011001011100001 a
+b100110001111100000100100010001 a
+b1000111101001001110110110101001 a
+b10010001101101010101011001011010 a
+b11111011000100110011110110110110 a
+b1010011000011001001111110111000 a
+b11111110100111111001111010001111 a
+b10100011010011110000011001111101 a
+b10100111111010111100101101000 a
+b11011101101001110111110011101110 a
+b11000111010010110110010000000011 a
+b10010001011001010011100110010101 a
+b10001100100001111100100010000000 a
+b10001001111010001111100001010001 a
+b10010000000101001011101010110110 a
+b111111011000100110001001011111 a
+b10111111000011110100110111111 a
+b11000011101101010101000101100001 a
+b1000101110000110010111100000111 a
+b10000011010000100000100100010 a
+b1100000011111000110010001100 a
+b10011100001011011110000010101001 a
+b1100111010111110110000000110101 a
+b11101000101011010101011101101011 a
+b101001110000100001011010111001 a
+b1110001101000011111111110110000 a
+b11011000110001001111011001011111 a
+b1111101010011001001001010011110 a
+b11110100011001010111010001110011 a
+b1000001000011110010101111000001 a
+b10101101000100100010101000001 a
+b101100111011011010111010111101 a
+b1101010011000000101101010001100 a
+b100110101000010000100101000010 a
+b11010101111001011001001101010001 a
+b11001101100100111001110011100 a
+b10110001110010001010111100100001 a
+b10111011100011101101010100000111 a
+b1101000001010101111001101111011 a
+b10110101001101001101011001101011 a
+b1101100111110111110001100111100 a
+b10011110100000000111000111101000 a
+b11010010010010110000101000011010 a
+b10011100101001010010000111101100 a
+b11100001111010100001100001001110 a
+b10011001000100001011011011011100 a
+b10101011110110111011010001000 a
+b101111010001001110000010011011 a
+b10011100111110101111010011001001 a
+b11100111101001011000001100100100 a
+b111011000011011111100100010101 a
+b10000110001000011110010010101000 a
+b10110100111110011010011010100001 a
+b11001011011011010100011100101011 a
+b111011011111100101001111101001 a
+b11101000010011110011101110011010 a
+b100011001110000100001100 a
+b10010000011100011000100011110011 a
+b1001000001001100010101110000101 a
+b1011000011000000110001011010111 a
+b10001100111101110001101111000110 a
+b11111001100101001100010101011100 a
+b11111111100100010110101000011011 a

@@ -1,0 +1,309 @@
+# vsim -c work.xgemac_top "+UVM_TESTNAME=xgemac_normal_test" 
+# Start time: 11:42:09 on Jul 16,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.pkt_interface(fast)
+# Loading work.wish_intf(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.xgemac_pkg(fast)
+# Loading work.xgemac_top_sv_unit(fast)
+# Loading work.xgemac_top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-8637) in_mon.sv(64): A modport ('pkt_in_mon_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) out_mon.sv(80): A modport ('pkt_out_mon_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) wish_mon.sv(29): A modport ('wish_m_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) reset_drv.sv(99): A modport ('wish_reset_dr_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::reset_drv File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) reset_drv.sv(98): A modport ('wish_reset_dr_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::reset_drv File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) reset_drv.sv(88): A modport ('pkt_reset_dr_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::reset_drv File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) reset_drv.sv(87): A modport ('pkt_reset_dr_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::reset_drv File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) wish_drv.sv(29): A modport ('wish_d_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::wish_drv File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) wish_drv.sv(41): A modport ('wish_d_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::wish_drv File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) wish_drv.sv(42): A modport ('wish_d_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::wish_drv File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) wish_drv.sv(43): A modport ('wish_d_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::wish_drv File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) wish_drv.sv(44): A modport ('wish_d_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::wish_drv File: xgemac_pkg.sv
+# ** Warning: (vsim-8637) wish_drv.sv(45): A modport ('wish_d_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::wish_drv File: xgemac_pkg.sv
+# ** Warning: (vsim-3764) xgemac_scoreboard.sv(4): Stand-alone call to function 'write_inactiveport' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::uvm_analysis_imp_inactiveport #(xgemac_pkg::in_seq_item, xgemac_pkg::xgemac_scoreboard) File: xgemac_pkg.sv
+# ** Warning: (vsim-3764) xgemac_scoreboard.sv(5): Stand-alone call to function 'write_outpassiveport' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::uvm_analysis_imp_outpassiveport #(xgemac_pkg::in_seq_item, xgemac_pkg::xgemac_scoreboard) File: xgemac_pkg.sv
+# ** Warning: (vsim-3764) xgemac_scoreboard.sv(6): Stand-alone call to function 'write_wishactiveport' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /xgemac_pkg::uvm_analysis_imp_wishactiveport #(xgemac_pkg::wish_seq_item, xgemac_pkg::xgemac_scoreboard) File: xgemac_pkg.sv
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test xgemac_normal_test...
+# UVM_INFO xgemac_base_test.sv(59) @ 0: uvm_test_top [xgemac_normal_test] Inside BASE_TEST
+# UVM_INFO xgemac_base_test.sv(60) @ 0: uvm_test_top [xgemac_normal_test] Done BASE_TEST
+# UVM_INFO xgemac_normal_test.sv(59) @ 0: uvm_test_top [xgemac_normal_test] Inside xgemac_normal_test
+# UVM_WARNING @ 0: reporter@@xgemac_normal_vseq_h [uvm_sequence_base] Body definition undefined
+# UVM_INFO xgemac_base_vseq.sv(58) @ 0: reporter@@xgemac_normal_vseq_h [xgemac_normal_vseq] virtual_seq: Inside Body
+# UVM_INFO xgemac_normal_vseq.sv(41) @ 0: reporter@@xgemac_normal_vseq_h [xgemac_normal_vseq] virtual_seq: Inside Body
+# UVM_WARNING @ 0: uvm_test_top.xgemac_env_h.reset_agent_h.reset_seqr_h@@reset_seq_h [uvm_sequence_base] Body definition undefined
+# UVM_INFO reset_seq.sv(15) @ 0: uvm_test_top.xgemac_env_h.reset_agent_h.reset_seqr_h@@reset_seq_h [reset_seq] Starting reset sequence...
+# UVM_INFO reset_seq.sv(17) @ 0: uvm_test_top.xgemac_env_h.reset_agent_h.reset_seqr_h@@reset_seq_h [reset_seq] Reset assertion
+# UVM_INFO in_mon.sv(76) @ 1200: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 1200: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 3600: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 3600: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO reset_drv.sv(90) @ 3600: uvm_test_top.xgemac_env_h.reset_agent_h.reset_drv_h [reset_drv] [PKT RESET DRIVER TASK] reset_156m25_n = 0
+# UVM_INFO wish_mon.sv(59) @ 5000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_mon_h [wish_mon] [WISHBONE MONITOR READ TASK] read_address = 0, read_data = 0
+# ------------------------------------------------------ 
+# UVM_INFO wish_drv.sv(46) @ 5000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_drv_h [wish_drv] [WISHBONE DRIVER WRITE TASK] write_address = 0, write_data = 1
+# ----------------------------------------------------- 
+# UVM_INFO in_mon.sv(76) @ 6000: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 6000: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 8400: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 8400: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 10800: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 10800: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 13200: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 13200: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO wish_mon.sv(42) @ 15000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_mon_h [wish_mon] [WISHBONE MONITOR WRITE TASK] write_address = 0, write_data = 0
+# ------------------------------------------------------ 
+# UVM_INFO reset_drv.sv(101) @ 15000: uvm_test_top.xgemac_env_h.reset_agent_h.reset_drv_h [reset_drv] [WISHBONE RESET DRIVER TASK] wb_rst_i = 1
+# ---------------------------------------------------------------------------------------------------------------------
+# Name                           Type            Size  Value                                                           
+# ---------------------------------------------------------------------------------------------------------------------
+# req                            reset_seq_item  -     @1060                                                           
+#   reset_156m25_n               integral        1     'h0                                                             
+#   wb_rst_i                     integral        1     'h1                                                             
+#   begin_time                   time            64    0                                                               
+#   end_time                     time            64    15000                                                           
+#   depth                        int             32    'd2                                                             
+#   parent sequence (name)       string          11    reset_seq_h                                                     
+#   parent sequence (full name)  string          64    uvm_test_top.xgemac_env_h.reset_agent_h.reset_seqr_h.reset_seq_h
+#   sequencer                    string          52    uvm_test_top.xgemac_env_h.reset_agent_h.reset_seqr_h            
+# ---------------------------------------------------------------------------------------------------------------------
+# UVM_INFO reset_seq.sv(29) @ 15000: uvm_test_top.xgemac_env_h.reset_agent_h.reset_seqr_h@@reset_seq_h [reset_seq] Reset de-assertion
+# UVM_INFO wish_drv.sv(46) @ 15000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_drv_h [wish_drv] [WISHBONE DRIVER WRITE TASK] write_address = 10, write_data = ffffffff
+# ----------------------------------------------------- 
+# UVM_INFO in_mon.sv(76) @ 15600: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 15600: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 18000: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 18000: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO reset_drv.sv(90) @ 18000: uvm_test_top.xgemac_env_h.reset_agent_h.reset_drv_h [reset_drv] [PKT RESET DRIVER TASK] reset_156m25_n = 1
+# UVM_INFO in_mon.sv(76) @ 20400: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 20400: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 22800: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 22800: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO wish_mon.sv(42) @ 25000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_mon_h [wish_mon] [WISHBONE MONITOR WRITE TASK] write_address = 0, write_data = 1
+# ------------------------------------------------------ 
+# UVM_INFO wish_drv.sv(58) @ 25000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_drv_h [wish_drv] [WISHBONE DRIVER READ TASK] read_address = 0
+# ------------------------------------------------------ 
+# UVM_INFO in_mon.sv(76) @ 25200: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 25200: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 27600: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 27600: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 30000: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 30000: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 32400: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 32400: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 34800: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 34800: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO wish_mon.sv(59) @ 35000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_mon_h [wish_mon] [WISHBONE MONITOR READ TASK] read_address = 10, read_data = 0
+# ------------------------------------------------------ 
+# UVM_INFO reset_drv.sv(101) @ 35000: uvm_test_top.xgemac_env_h.reset_agent_h.reset_drv_h [reset_drv] [WISHBONE RESET DRIVER TASK] wb_rst_i = 0
+# ---------------------------------------------------------------------------------------------------------------------
+# Name                           Type            Size  Value                                                           
+# ---------------------------------------------------------------------------------------------------------------------
+# req                            reset_seq_item  -     @1163                                                           
+#   reset_156m25_n               integral        1     'h1                                                             
+#   wb_rst_i                     integral        1     'h0                                                             
+#   begin_time                   time            64    15000                                                           
+#   end_time                     time            64    35000                                                           
+#   depth                        int             32    'd2                                                             
+#   parent sequence (name)       string          11    reset_seq_h                                                     
+#   parent sequence (full name)  string          64    uvm_test_top.xgemac_env_h.reset_agent_h.reset_seqr_h.reset_seq_h
+#   sequencer                    string          52    uvm_test_top.xgemac_env_h.reset_agent_h.reset_seqr_h            
+# ---------------------------------------------------------------------------------------------------------------------
+# UVM_INFO reset_seq.sv(41) @ 35000: uvm_test_top.xgemac_env_h.reset_agent_h.reset_seqr_h@@reset_seq_h [reset_seq] Reset sequence completed
+# UVM_INFO wish_drv.sv(58) @ 35000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_drv_h [wish_drv] [WISHBONE DRIVER READ TASK] read_address = 8
+# ------------------------------------------------------ 
+# UVM_INFO out_mon.sv(96) @ 37200: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 37200: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 39600: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 39600: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 42000: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 42000: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 44400: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 44400: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO wish_mon.sv(59) @ 45000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_mon_h [wish_mon] [WISHBONE MONITOR READ TASK] read_address = 0, read_data = 1
+# ------------------------------------------------------ 
+# UVM_INFO wish_drv.sv(58) @ 45000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_drv_h [wish_drv] [WISHBONE DRIVER READ TASK] read_address = 10
+# ------------------------------------------------------ 
+# UVM_INFO out_mon.sv(96) @ 46800: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 46800: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 49200: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 49200: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 51600: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 51600: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 54000: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 54000: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO wish_mon.sv(59) @ 55000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_mon_h [wish_mon] [WISHBONE MONITOR READ TASK] read_address = 8, read_data = 0
+# ------------------------------------------------------ 
+# UVM_INFO wish_drv.sv(58) @ 55000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_drv_h [wish_drv] [WISHBONE DRIVER READ TASK] read_address = c
+# ------------------------------------------------------ 
+# UVM_INFO out_mon.sv(96) @ 56400: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 56400: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 58800: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 58800: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 61200: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 61200: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 63600: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 63600: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO wish_mon.sv(59) @ 65000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_mon_h [wish_mon] [WISHBONE MONITOR READ TASK] read_address = 10, read_data = 0
+# ------------------------------------------------------ 
+# UVM_INFO wish_drv.sv(58) @ 65000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_drv_h [wish_drv] [WISHBONE DRIVER READ TASK] read_address = 80
+# ------------------------------------------------------ 
+# UVM_INFO out_mon.sv(96) @ 66000: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 66000: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 68400: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 68400: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 70800: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 70800: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 73200: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 73200: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO wish_mon.sv(59) @ 75000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_mon_h [wish_mon] [WISHBONE MONITOR READ TASK] read_address = c, read_data = 0
+# ------------------------------------------------------ 
+# UVM_INFO wish_drv.sv(58) @ 75000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_drv_h [wish_drv] [WISHBONE DRIVER READ TASK] read_address = 84
+# ------------------------------------------------------ 
+# UVM_INFO out_mon.sv(96) @ 75600: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 75600: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 78000: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 78000: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 80400: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 80400: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 82800: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 82800: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO wish_mon.sv(59) @ 85000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_mon_h [wish_mon] [WISHBONE MONITOR READ TASK] read_address = 80, read_data = 0
+# ------------------------------------------------------ 
+# UVM_INFO wish_drv.sv(58) @ 85000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_drv_h [wish_drv] [WISHBONE DRIVER READ TASK] read_address = 90
+# ------------------------------------------------------ 
+# UVM_INFO out_mon.sv(96) @ 85200: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 85200: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 87600: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 87600: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 90000: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 90000: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO in_mon.sv(76) @ 92400: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO out_mon.sv(96) @ 92400: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO out_mon.sv(96) @ 94800: uvm_test_top.xgemac_env_h.out_agent_h.out_mon_h [out_mon] [OUT MONITOR] pkt_rx_avail = 0, pkt_rx_data = 0,  pkt_rx_eop = 0, pkt_rx_val = 0,
+#                                         pkt_rx_sop = 0, pkt_rx_mod = 0,pkt_rx_err = 0
+# UVM_INFO in_mon.sv(76) @ 94800: uvm_test_top.xgemac_env_h.in_agent_h.in_mon_h [in_mon] [IN MONITOR] pkt_tx_data = 0, pkt_tx_sop = 0, pkt_tx_eop = 0, pkt_tx_val = 0, pkt_tx_mod = 0, pkt_tx_full = 0
+# UVM_INFO wish_mon.sv(59) @ 95000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_mon_h [wish_mon] [WISHBONE MONITOR READ TASK] read_address = 84, read_data = 0
+# ------------------------------------------------------ 
+# UVM_INFO wish_drv.sv(58) @ 95000: uvm_test_top.xgemac_env_h.wish_agent_h.wish_drv_h [wish_drv] [WISHBONE DRIVER READ TASK] read_address = 94
+# ------------------------------------------------------ 
+# UVM_INFO xgemac_normal_test.sv(69) @ 95000: uvm_test_top [xgemac_normal_test] Done xgemac_normal_test
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 95000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  118
+# UVM_WARNING :    2
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [in_mon]    40
+# [out_mon]    40
+# [reset_drv]     4
+# [reset_seq]     4
+# [uvm_sequence_base]     2
+# [wish_drv]    10
+# [wish_mon]    10
+# [xgemac_normal_test]     4
+# [xgemac_normal_vseq]     2
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 95 ns  Iteration: 69  Instance: /xgemac_top
+# End time: 11:42:13 on Jul 16,2024, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 16

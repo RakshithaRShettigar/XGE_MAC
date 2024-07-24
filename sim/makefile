@@ -1,17 +1,13 @@
 all: clean compile simulate
 
 ifndef test
-override test = xgemac_base_test
+override test=xgemac_normal_test
 endif
-
-ifndef verbosity
-override verbosity = UVM_MEDIUM
-endif
-
+ 
 compile:
 	vlib work;
 	vlog -sv \
-	-l mac.log \
+	-l mac_compile.log \
 	-f mac_compile.f
  
 simulate:
@@ -19,9 +15,12 @@ simulate:
 	work.xgemac_top \
 	-voptargs=+acc=npr \
 	+UVM_TESTNAME=$(test) \
-	+UVM_VERBOSITY=$(verbosity) \
-	-c -do "log -r /*; run -all;  exit" > mac_sim.log
-	wlf2vcd -o wave.vcd vsim.wlf
+	-l mac_sim.log \
+	-c -do "log -r /*; add wave -r /*; run -all;  exit" \
+	-wlf waveform.wlf
+
+view:
+	vsim -view waveform.wlf
  
 clean:
-	rm -rf transcript *.vcd *.wlf work/ *.log *.vstf
+	rm -rf transcript *.vcd *.wlf work/ *.log > mac_sim.log

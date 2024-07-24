@@ -37,14 +37,14 @@ endfunction : new
 //  name : xgemac_normal_vseq
 //--------------------------------------------------------------------------------------------
    task xgemac_normal_vseq::body();
-     super.body();
+    super.body();
     `uvm_info(get_type_name(), "virtual_seq: Inside Body", UVM_LOW);
      in_seq_normal_h = in_seq_normal::type_id::create("in_seq_normal_h");
      
      fork
       in_seq_normal_h.start(in_seqr_h);
-      reset_seq_h.start(reset_seqr_h);
       wish_seq_h.start(wish_seqr_h);
+      reset_seq_h.start(reset_seqr_h);
     join
       
    endtask

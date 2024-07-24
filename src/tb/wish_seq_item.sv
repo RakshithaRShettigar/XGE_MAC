@@ -13,8 +13,7 @@ class wish_seq_item extends uvm_sequence_item;
   bit wb_ack_o;     // Wishbone acknowledge
   bit [31:0] wb_dat_o; // Wishbone data output
   bit wb_int_o;        // Wishbone interrupt signal
-
- //Factory registration
+  
   `uvm_object_utils_begin(wish_seq_item)
   `uvm_field_int(wb_adr_i, UVM_ALL_ON)
   `uvm_field_int(wb_cyc_i, UVM_ALL_ON)
@@ -22,17 +21,14 @@ class wish_seq_item extends uvm_sequence_item;
   `uvm_field_int(wb_stb_i, UVM_ALL_ON)
   `uvm_field_int(wb_we_i,  UVM_ALL_ON)
   `uvm_object_utils_end
-
-
- //constraint : to ensure that wishbone address is inside the given register addresses
+ 
    constraint reg_constraints { wb_adr_i inside {'h0, 'h10,'h08, 'h0c, 'h80, 'h84, 'h90, 'h94} ;}  
 
- //class constructor
   function new(string name = "wish_seq_item");
     super.new(name);
-  endfunction: new
+  endfunction
  
 
-endclass: wish_seq_item
+endclass
 
 `endif

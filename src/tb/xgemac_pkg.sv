@@ -3,7 +3,7 @@
 package xgemac_pkg;
   `include "uvm_macros.svh"
   import uvm_pkg::*;
-
+  `include "xgemac_defines.svh"
   `include "in_seq_item.sv"
   `include "reset_seq_item.sv"
   `include "wish_seq_item.sv"
